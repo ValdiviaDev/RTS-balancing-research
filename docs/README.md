@@ -128,11 +128,13 @@ I'll put these values to the parameters we now have; and I will treat these thre
 <td>0</td>
 </tr>
 
+<tr>
 <td>Gunman</td>
 <td>60</td>
 <td>0,3</td>
 </tr>
 
+<tr>
 <td>F. Machine</td>
 <td>80</td>
 <td>0,5</td>
