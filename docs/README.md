@@ -10,6 +10,8 @@ In this research document I’ll be explaining some useful methods to make a bal
 
 Units and unit management is one of the core components of any RTS video game. To make the combat in RTS games engaging, it is important to have a balanced roster of units. Without a good unit balance, the strategy part of a real strategy game would fall flat, and the game would not feel as a strategy game, but something like a construction simulation game with units that eliminate each other.
 
+## Intransitive mechanics and Rock-Paper-Scissors
+
 A really good way to design a balanced set of units in a strategy game, is to use intransitive mechanics. Intransitive mechanics consist on having a confrontation between three types of entities that contrarrest each other. To put it simple, it’s the same as with rock-paper-scissors: we have three types of entities, consisting of rock, paper and scissors; and these entities counteract each other: rock wins scissors, scissors wins paper and paper wins rock.
 
 This mechanic in an RTS game allows us to have a dynamic approach to combat, as well as being easier for a designer to balance a combat unit set. But of course, an RTS video game is not as simple as rock-paper-scissors, as there are more parameters to take in account, like the cost of each unit, its health or the damage it does.
@@ -55,26 +57,177 @@ Taking this table, and treating the outcomes of each game as points, we could tr
 
 **P = (+ 1) * r + 0 * p + (- 1) * s**
 
-**P = (- 1) * r + (+ 1) * p + 0*s**
+**P = (- 1) * r + (+ 1) * p + 0 * s**
 
 simplifying,
 
-**R = s - p**
+### R = s - p
 
-**P = r - s**
+### P = r - s
 
-**S = p - r**
+### S = p - r
 
-**STUFF MISSING HERE**
+This equations allow us to calculate which would be the best strategy against an opponent. For example, let’s say that a set of options for a rival is 1 (**r + p + s = 1**). If an opponent threw scissors two times (**s = 2/4**) more than they threw rock (**r = 1/4**) or paper (**p = 1/4**), we would be able to tell that the best strategy against them is to always throw rock (**R**), as this has a payoff of 1/4, having the other two options a payoff of 0 (**S**)  and -1/4 (**P**), choosing to throw paper, being actually harmful to our playstyle. The payoff of every equation represents the utility of each element and how often it should be used for an optimal playstile. It is for this reason that in this specific case, paper should be never used, as it payoff is a negative number.
+
+But, let’s say we assume that in our game strategy for rock-paper-scissors we try to not stick too much to one of these three options as the three of them are perfectly valid, so we use rock, paper and scissors an equal amount of times. This would mean that any of our three options in the game has the same probability of winning or losing if our opponent acts the same way. This can be represented mathematically simply by equalizing our three options in this fashion: **R = P = S**.
+
+In rock-paper-scissors and in any type of [zero-sum games](https://en.wikipedia.org/wiki/Zero-sum_game), the payoff for any play will always be zero. In other words, if we throw paper and our opponent throws scissors, we will have a score of “- 1”, and they will have a score of “+ 1”. If we calculate the payoff of the play, this would be: “(-1) + (+1)”, resulting in 0. This payoff will always be zero in any game of rock-paper-scissors in which we engage, because of this game’s nature. This means that any choice we take in rock-paper-scissors will ultimately finish in an aftermath of 0. We could express this using the same formula as before: **R = P = S = 0**.
+
+As said earlier, considering that a set of options for our rival is equal to 1, and if we also consider the possibilities of our opponent throwing one of these three elements, what we know for sure is that they have a 100% chance of throwing one of these three elements. This could be represented mathematically as:
+**r + p + s = 1**.
+
+So taking in account these equations:
+
+### R = P = S = 0
+
+### r + p + s = 1
+
+We can calculate the probabilities on how often they will use any element:
+
+R = 0 = s - p -> **s = p**
+
+P = 0 = r - s -> **r = s**
+
+S = 0 = p - r -> **p = r**
+
+Having r = p and r = s, and taking in account that r + p + s = 1, we can make a substitution in the equation so:
+
+r + r + r = 1
+
+3r = 1 -> **r = 1/3**
+
+And as we know that r = s = p,
+
+**p = 1/3**
+
+**s = 1/3**
+
+As this results show, the most probable strategy that the opponent will take will be to throw rock, paper and scissors an equal amount of times. This is pretty obvious as we use the same exact strategy, and it is intuïtive to adopt this strategy in this game, as it is the most unpredictable; but as we have more complex parameters in an RTS game than in rock-paper-scissors, this set of equations will be very useful to balance our game.
+
+## Intransitive mechanics applied to an RTS game
+
+Following with balancing an RTS, we should first define our three choices, or in this case types of units. What most RTS games do is have a melee attack ground type unit, a long range attack ground type unit, and an aerial type unit that attacks mid-distance. In our case let’s say we have swordsmen, gunmen and flying machines. Swordsmen defeat  gunmen, gunmen defeat flying machines and flying machines defeat swordsman.
+
+*PHOTO*
+
+In this case we will not work with points, but with **unit costs**. Every unit will have its cost, and an **additional damage index** will also be included to each unit. This index damage is the damage ratio a unit does, when it engages its counter unit. Let’s put it this way; a unit that is counteracted by another unit can attack the other unit, but it does less damage than the unit that is being counteracted by. Let’s say that a gunman has an additional damage index of 0.3 against a swordsman because of the damage it does when the swordsman is approaching it; a flying machine has an additional damage index of 0.5 against a gunman because of the damage the ship does to the gunman before being destroyed; and the swordsman has an index of 0, because a swordsman can’t attack an aerial unit. The cost of the unit is, of course, the cost that the player needs to create this unit; it can be represented in game as gold, wood, crystals; or whatever the designers find more suitable.
+
+I'll put these values to the parameters we now have; and I will treat these three types of units as units on their own, for now.
+
+<table>
+
+<tr>
+<td>Unit</td>
+<td>Cost</td>
+<td>Addit. dmg index</td>
+</tr>
+
+<tr>
+<td>Swordsman</td>
+<td>40</td>
+<td>0</td>
+</tr>
+
+<td>Gunman</td>
+<td>60</td>
+<td>0,3</td>
+</tr>
+
+<td>F. Machine</td>
+<td>80</td>
+<td>0,5</td>
+</tr>
+
+</table>
+
+
+I will now be calculating each cost of each unit respect of the unit it confronts. As we've seen with rock-paper-scissors, a negative cost in the cost table means that a unit wins to another... So, after explaining these two concepts, let’s dive straight into what we will call from now on the **cost table**, and the **probability calculations**.
+
+<table>
+
+<tr>
+<td></td>
+<td>s</td>
+<td>g</td>
+<td>f</td> 
+</tr>
+
+<tr>
+<td>S</td>
+<td>40 - 40</td>
+<td>60 - (40 * 0,3)</td>
+<td>(0 * 80)  - 40</td> 
+</tr>
+
+<tr>
+<td>G</td>
+<td>(40 * 0,3) - 60</td>
+<td>60- 60</td>
+<td>80 - (60 * 0,5)</td> 
+</tr>
+
+<tr>
+<td>F</td>
+<td>40 - (0 * 80)</td>
+<td>(60 * 0,5) - 80</td>
+<td>80 - 80</td> 
+</tr>
+
+</table>
+
+<table>
+
+<tr>
+<td></td>
+<td>s</td>
+<td>g</td>
+<td>f</td> 
+</tr>
+
+<tr>
+<td>S</td>
+<td>0</td>
+<td>48</td>
+<td>- 40</td> 
+</tr>
+
+<tr>
+<td>G</td>
+<td>- 48</td>
+<td>0</td>
+<td>50</td> 
+</tr>
+
+<tr>
+<td>F</td>
+<td>40</td>
+<td>- 50</td>
+<td>0</td> 
+</tr>
+
+</table>
+
+
+
+
+
+////////////////////////////////////////
 
 You can find and edit (if you download it) a table that utilizes this last method explained in this [thread](https://www.gamedev.net/forums/topic/685693-rts-unit-balance/?tab=comments#comment-5329035). The table has been done by the user of this forum named "HappyCoder".
 
-You can find an extensive explanation on how intransitive mechanics work and how to apply them to RTS and other types of games [here](https://gamebalanceconcepts.wordpress.com/2010/09/01/level-9-intransitive-mechanics/).
+You can find an extensive explanation on the first part of this section, on how intransitive mechanics work and how to apply them to RTS and other types of games [here](https://gamebalanceconcepts.wordpress.com/2010/09/01/level-9-intransitive-mechanics/).
 
 You can also find some more calculations about unit costs, taking in account more abstract unit parameters like speed and range in this [thread](http://zero-k.info/Forum/Thread/22670?page=1) of this [Zero-K forum](http://zero-k.info/Forum/). Calculations and graphics made by the user of the forum named "Brackman".
 
 
 # Technology trees and build order
+
+The first thing to take in account when building a tech tree are the elements that compose it:
+
+* Buildings
+* Units
+* Upgrades
+* Other
 
 # AI
 
