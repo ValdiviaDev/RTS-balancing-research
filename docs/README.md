@@ -251,7 +251,9 @@ The “additional damage index” that I talked about earlier can be calculated 
 
 So in order to calculate the payoff for the table it would be better to use this formula:
 
-### B cost(A dps/B hp) - A cost(B dps/A hp)
+### payoff = B cost(A dps/B hp) - A cost(B dps/A hp)
+
+This table would give the same results in the probability calculations, as they did before, but using the formula from avobe.
 
 <table>
 
@@ -293,24 +295,23 @@ So in order to calculate the payoff for the table it would be better to use this
 
 </table>
 
+You can find and edit (if you download it) a table that utilizes this last method explained in this [thread](https://www.gamedev.net/forums/topic/685693-rts-unit-balance/?tab=comments#comment-5329035). The table has been done by the user of this forum named "HappyCoder".
+
+You can find an extensive explanation on the first part of this section, on how intransitive mechanics work and how to apply them to RTS and other types of games [here](https://gamebalanceconcepts.wordpress.com/2010/09/01/level-9-intransitive-mechanics/).
 
 ////////////////////////////////////////
 
 But it’s not always a good thing to have a game in perfect balance. A lot of unbalance makes a game frustrating and unfair, but a perfect balance makes a game stale. In the case of competitive games, this can turn off experienced players because of the stagnant nature the game has adopted, and also unexperienced players that can't addapt to the competitive, because of really grounded strategies, that they don’t let room for someone new to learn the basics. So when balancing units, it’s not the most effective to just make it perfectly balanced, but to try and see the importance of the unbalance in balanced games. 
 
-Here you can watch a video from extra credits where they explain this concept in more depth.
+So when a designer calculates the probabilities on how useful will be every unit or type of unit, they shoudn't attempt to make them perfecty equal, but to have them somewhat unbalanced to prevent the game from getting stale or monotonous.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/watch?v=e31OSVZF77w&feature=youtu.be" frameborder="0" allowfullscreen></iframe>
+Here you can watch a video from _Extra Credits_ in which they explain this concept in more depth.
 
-
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/e31OSVZF77w" frameborder="0" allowfullscreen></iframe>
 
 
 ////////////////////////////////////////
 
-You can find and edit (if you download it) a table that utilizes this last method explained in this [thread](https://www.gamedev.net/forums/topic/685693-rts-unit-balance/?tab=comments#comment-5329035). The table has been done by the user of this forum named "HappyCoder".
-
-You can find an extensive explanation on the first part of this section, on how intransitive mechanics work and how to apply them to RTS and other types of games [here](https://gamebalanceconcepts.wordpress.com/2010/09/01/level-9-intransitive-mechanics/).
 
 You can also find some more calculations about unit costs, taking in account more abstract unit parameters like speed and range in this [thread](http://zero-k.info/Forum/Thread/22670?page=1) of this [Zero-K forum](http://zero-k.info/Forum/). Calculations and graphics made by the user of the forum named "Brackman".
 
