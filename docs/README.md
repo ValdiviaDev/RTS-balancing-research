@@ -1,10 +1,10 @@
-My name is David Valdivia and I'm a student from the video games design and development degree at the Polytechnic University of Catalonia. In this website I'm going to be explaining the importance of balance in RTS video games (real time strategy games), which are the most important aspects to take in account in this subject, and some methods to reach the goal of balancing an RTS game.
+My name is David Valdivia and I'm a student from the video games design and development degree at the Polytechnic University of Catalonia (UPC), in the sub-delegation of the universitiiy called [CITM](https://www.citm.upc.edu/). In this website I'm going to be explaining the importance of balance in RTS video games (real time strategy games), which are the most important aspects to take in account in this subject, and some methods to reach the goal of balancing an RTS game.
 
 Game balance is the concept and action of shaping a game’s rules with the object to make this game’s rules and systems effective. Game balancing is a really important aspect to take in account both in board games and in video games, because an unbalanced game; in other words, a game with poor and/or unfair mechanics and systems; is a boring game to play, at its best; and a frustrating and unfair game to play, at its worst.
 
 Of course, this is no different to real-time-strategy ([RTS](https://en.wikipedia.org/wiki/Real-time_strategy)) video games. Balance in these types of games is extremely important because they are, as its name says, video games where the player has to ideate a strategy to complete a level or scenario, in individual 1 player RTS video games, and ideate an even more intricate and complex strategy to beat a human rival in competitive RTS video games.
 
-In this research document I’ll be explaining some useful methods to make a balanced RTS video game, taking in account the most important systems and elements to balance in this genre. This systems that I’ll be tackling are; the unit system, technology trees (tech trees for short), artificial intelligence, and maps or stages.
+In this research document I’ll be explaining some useful methods to make a balanced RTS video game, taking in account the most important systems and elements to balance in this genre. This systems that I’ll be tackling are; the **unit system**, **technology trees** (tech trees for short), **artificial intelligence**, and **maps or stages**.
 
 # Unit balancing
 
@@ -239,13 +239,13 @@ From the results of the probability calculation, it can be extrapolated that our
 
 This method is the base of balancing a game with intransitive mechanics, but RTS video games have more depth than just costs and what I've called “additional damage index”, that isn’t a real parameter that this type of games have. Aside from the unit cost, the most tangible variables of a unit to take in account are its life points or health points (HP), and the amount of damage it does, in other words, how strong this unit is.
 
-One of the methods to calculate the payoff table taking these two parameters in account, (HP and damage) is to take the damage per second (DPS) that every unit would do to another unit and not the damage it would be done by the unit taking in account this unit alone. To put an example, a ground melee unit may do 40 units of dps to another ground unit, but 0 to an aerial unit. In this case we could have this three types of dps:
+One of the methods to calculate the payoff table taking these two parameters in account, (HP and damage) is to take the damage per second (DPS) that every unit would do to another unit and not the damage it would be done by the unit taking in account this unit alone. To put an example, a ground melee unit may do 40 units of DPS to another ground unit, but 0 to an aerial unit. In this case we could have this three types of dps:
 
-* Heavy dps: against ground melee units
-* Light dps: against ground long range attack units
-* Aerial dps: against aerial units
+* Heavy DPS: against ground melee units
+* Light DPS: against ground long range attack units
+* Aerial DPS: against aerial units
 
-The “additional damage index” that I talked about earlier can be calculated by dividing the adient dps with the contrary unit’s hp. If we call our unit "A", and the rival's unit "B", these would be the formula for calculating this index:
+The “additional damage index” that I talked about earlier can be calculated by dividing the adient DPS with the contrary unit’s hp. If we call our unit "A", and the rival's unit "B", these would be the formula for calculating this index:
 
 **addit. dmg index = A dps / B hp && addit. dmg index = A dps / B hp**
 
@@ -261,9 +261,9 @@ This table would give the same results in the probability calculations, as they 
 <td>Unit</td>
 <td>Cost</td>
 <td>HP</td>
-<td>Heavy dps</td> 
-<td>Light dps</td> 
-<td>Aerial dps</td> 
+<td>Heavy DPS</td> 
+<td>Light DPS</td> 
+<td>Aerial DPS</td> 
 </tr>
 
 <tr>
@@ -295,13 +295,15 @@ This table would give the same results in the probability calculations, as they 
 
 </table>
 
-You can find and edit (if you download it) a table that utilizes this last method explained in this [thread](https://www.gamedev.net/forums/topic/685693-rts-unit-balance/?tab=comments#comment-5329035). The table has been done by the user of this forum named "HappyCoder".
+***You can find and edit (if you download it) a table that utilizes this last method explained in this [thread](https://www.gamedev.net/forums/topic/685693-rts-unit-balance/?tab=comments#comment-5329035). The table has been done by the user of this forum named "HappyCoder". This a really good table to use if you need to balance your units.***
 
-You can find an extensive explanation on the first part of this section, on how intransitive mechanics work and how to apply them to RTS and other types of games [here](https://gamebalanceconcepts.wordpress.com/2010/09/01/level-9-intransitive-mechanics/).
+I've taken in account really tangible parameters of a unit, like its HP or DPS, but there are other more intangible parameters to consider when balancing units, like **speed** or **range**. One way of telling which range and speed a unit should have could be by commmon sense. For example, a more powerful unit in damage should be slower, or have less range; but you can also make some modifications to the formula I explained before. 
 
-////////////////////////////////////////
+***You can find some more calculations about unit costs, taking in account these more abstract unit parameters in this [thread](http://zero-k.info/Forum/Thread/22670?page=1) of this [Zero-K forum](http://zero-k.info/Forum/). Calculations and graphics made by the user of the forum named "Brackman".***
 
-But it’s not always a good thing to have a game in perfect balance. A lot of unbalance makes a game frustrating and unfair, but a perfect balance makes a game stale. In the case of competitive games, this can turn off experienced players because of the stagnant nature the game has adopted, and also unexperienced players that can't addapt to the competitive, because of really grounded strategies, that they don’t let room for someone new to learn the basics. So when balancing units, it’s not the most effective to just make it perfectly balanced, but to try and see the importance of the unbalance in balanced games. 
+## Interpreting the probability calculations
+
+It’s not always a good thing to have a game in perfect balance. A lot of unbalance makes a game frustrating and unfair, but a perfect balance makes a game stale. In the case of competitive games, this can turn off experienced players because of the stagnant nature the game has adopted, and also unexperienced players that can't addapt to the competitive, because of really grounded strategies, that they don’t let room for someone new to learn the basics. So when balancing units, it’s not the most effective to just make it perfectly balanced, but to try and see the importance of the unbalance in balanced games. 
 
 So when a designer calculates the probabilities on how useful will be every unit or type of unit, they shoudn't attempt to make them perfecty equal, but to have them somewhat unbalanced to prevent the game from getting stale or monotonous.
 
@@ -309,11 +311,7 @@ Here you can watch a video from _Extra Credits_ in which they explain this conce
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/e31OSVZF77w" frameborder="0" allowfullscreen></iframe>
 
-
-////////////////////////////////////////
-
-
-You can also find some more calculations about unit costs, taking in account more abstract unit parameters like speed and range in this [thread](http://zero-k.info/Forum/Thread/22670?page=1) of this [Zero-K forum](http://zero-k.info/Forum/). Calculations and graphics made by the user of the forum named "Brackman".
+***You can find an extensive explanation on the first part of this section, on how intransitive mechanics work and how to apply them to RTS and other types of games [here](https://gamebalanceconcepts.wordpress.com/2010/09/01/level-9-intransitive-mechanics/).***
 
 # Technology trees and build order
 
