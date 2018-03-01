@@ -143,7 +143,9 @@ I'll put these values to the parameters we now have; and I will treat these thre
 </table>
 
 
-I will now be calculating each cost of each unit respect of the unit it confronts. As we've seen with rock-paper-scissors, a negative cost in the cost table means that a unit wins to another... So, after explaining these two concepts, let’s dive straight into what we will call from now on the **cost table**, and the **probability calculations**.
+I will now be calculating each cost of each unit respect of the unit it confronts. As we've seen with rock-paper-scissors, a negative cost in the cost table means that a unit wins against another unit, an so on. To calculate the costs I'll be subtracting the costs of every unit like this: **Rival unit's cost - player unit's cost**. The additional damage index will be multiplied to the rival cost, where it can be applicable.
+
+So, after explaining these two concepts, let’s dive straight into what we will call from now on the **payoff table**, and the **probability calculations**.
 
 <table>
 
@@ -175,7 +177,9 @@ I will now be calculating each cost of each unit respect of the unit it confront
 <td>80 - 80</td> 
 </tr>
 
-</table>
+</table> 
+
+-> 
 
 <table>
 
@@ -209,6 +213,95 @@ I will now be calculating each cost of each unit respect of the unit it confront
 
 </table>
 
+    S = 0 * s + (+48) * g + (-40) * f 
+    G = (-48) * s + 0 * g + (+50) * f
+    F = (+40) * s + (-50) * g + 0 * f
+
+    S =  48g - 40f
+    G = - 48s + 50f
+    F = 40s -50g
+    S = G = F = 0
+    s + g + f = 1
+
+    S = 0 = 48g - 40f -> 48g = 40f -> 6g = 5f
+    G = 0 =  - 48s + 50g -> 48s = 50f -> 24s = 25f
+    F = 0 = 40s -50g -> 40s = 50g -> 4s = 5g
+
+    s + g + f = 1
+    f = 24/25s
+    g = 4/5s
+    s  + 4/5s + 24/25s = 1
+    69/25s = 1 -> s = 25/69 ≈ 0,36
+    f = 600/1725 -> f = 8/23 ≈ 0,35
+    g = 100/345 -> g = 20/69 ≈ 0,29
+
+From the results of the probability calculation, it can be extrapolated that our theoretical RTS video game would actually be fairly balanced, being the three probabilities of the opponent utilizing the units rounding the 1/3, that as we’ve found with rock-paper-scissors, is the ideal rate for having a balanced game. The unit or unit type that would be most underutilized in this hypothetical RTS game would be  the gunmen. If the designer of this game prefered to make gunmen a more relevant unit, they would likely have to decrease the unit’s cost or additional damage index. 
+
+This method is the base of balancing a game with intransitive mechanics, but RTS video games have more depth than just costs and what I've called “additional damage index”, that isn’t a real parameter that this type of games have. Aside from the unit cost, the most tangible variables of a unit to take in account are its life points or health points (HP), and the amount of damage it does, in other words, how strong this unit is.
+
+One of the methods to calculate the payoff table taking these two parameters in account, (HP and damage) is to take the damage per second (DPS) that every unit would do to another unit and not the damage it would be done by the unit taking in account this unit alone. To put an example, a ground melee unit may do 40 units of dps to another ground unit, but 0 to an aerial unit. In this case we could have this three types of dps:
+
+* Heavy dps: against ground melee units
+* Light dps: against ground long range attack units
+* Aerial dps: against aerial units
+
+The “additional damage index” that I talked about earlier can be calculated by dividing the adient dps with the contrary unit’s hp. If we call our unit "A", and the rival's unit "B", these would be the formula for calculating this index:
+
+**addit. dmg index = A dps / B hp && addit. dmg index = A dps / B hp**
+
+So in order to calculate the payoff for the table it would be better to use this formula:
+
+### B cost(A dps/B hp) - A cost(B dps/A hp)
+
+<table>
+
+<tr>
+<td>Unit</td>
+<td>Cost</td>
+<td>HP</td>
+<td>Heavy dps</td> 
+<td>Light dps</td> 
+<td>Aerial dps</td> 
+</tr>
+
+<tr>
+<td>Swordsman</td>
+<td>40</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>Gunman</td>
+<td>60</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+
+<tr>
+<td>F. Machine</td>
+<td>80</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+
+</table>
+
+
+////////////////////////////////////////
+
+But it’s not always a good thing to have a game in perfect balance. A lot of unbalance makes a game frustrating and unfair, but a perfect balance makes a game stale. In the case of competitive games, this can turn off experienced players because of the stagnant nature the game has adopted, and also unexperienced players that can't addapt to the competitive, because of really grounded strategies, that they don’t let room for someone new to learn the basics. So when balancing units, it’s not the most effective to just make it perfectly balanced, but to try and see the importance of the unbalance in balanced games. 
+
+Here you can watch a video from extra credits where they explain this concept in more depth.
+
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=e31OSVZF77w&t=2s" frameborder="0" allowfullscreen></iframe>
+
 
 
 
@@ -220,7 +313,6 @@ You can find and edit (if you download it) a table that utilizes this last metho
 You can find an extensive explanation on the first part of this section, on how intransitive mechanics work and how to apply them to RTS and other types of games [here](https://gamebalanceconcepts.wordpress.com/2010/09/01/level-9-intransitive-mechanics/).
 
 You can also find some more calculations about unit costs, taking in account more abstract unit parameters like speed and range in this [thread](http://zero-k.info/Forum/Thread/22670?page=1) of this [Zero-K forum](http://zero-k.info/Forum/). Calculations and graphics made by the user of the forum named "Brackman".
-
 
 # Technology trees and build order
 
