@@ -300,7 +300,7 @@ But it’s not always a good thing to have a game in perfect balance. A lot of u
 
 Here you can watch a video from extra credits where they explain this concept in more depth.
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=e31OSVZF77w&t=2s" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/watch?v=e31OSVZF77w&feature=youtu.be" frameborder="0" allowfullscreen></iframe>
 
 
 
