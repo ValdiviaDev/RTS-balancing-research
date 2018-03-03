@@ -6,6 +6,8 @@ Of course, this is no different to real-time-strategy ([RTS](https://en.wikipedi
 
 In this research document I’ll be explaining some useful methods to make a balanced RTS video game, taking in account the most important systems and elements to balance in this genre. This systems that I’ll be tackling are; the **unit system**, **technology trees** (tech trees for short), **artificial intelligence**, and **maps or stages**.
 
+If you are new to the genre and want to learn about the RTS genre and what is all about I encourage you to read this [article](https://waywardstrategist.com/2015/09/25/what-is-an-rts-game/). 
+
 # Unit balancing
 
 Units and unit management is one of the core components of any RTS video game. To make the combat in RTS games engaging, it is important to have a balanced roster of units. Without a good unit balance, the strategy part of a real strategy game would fall flat, and the game would not feel as a strategy game, but something like a construction simulation game with units that eliminate each other.
@@ -325,3 +327,38 @@ The first thing to take in account when building a tech tree are the elements th
 # AI
 
 # Map structuring
+
+When balancing maps and how they should be structured in RTS games, the first thing to take in account is that balancing maps from a competitive RTS videogame is much different from balancing a map from a 1 player campaign mode, or a game that is strictly a 1 player RTS video game. Another thing to take in account is that, unlike previous sections, we are not working with numbers, but with the construction of a graphical terrain, so there wont be really precise methods or formulas for balancing a map. With all that said, let's start with the balance in competitive maps.
+ 
+## Competitive Games
+
+When making a competitive map for an RTS game there is one basic principle to take in account, and the principal pilar to return to when struggling to make a map structuring decision:
+
+* Symmetry
+
+Symmetry
+
+Of course, not everything in the map should be symmetrical, as it would beacame stale very quickly if it was this way, but the three main things to make symmetrical in a competitive map are:
+
+* Gameplay elements
+* Landmarks
+* Structure
+
+Aside of making the map symmetrical in orther to not give an advantage to a player over the other, when designing a competitive level, the designer should set the recources in a certain way that the players are encouraged to slowly go towards each other. It is also important that this paths that the players are encouraged to take are divesre; in other words, there should be more than one way in which the players can encounter each other and engage in battle.
+
+This concept is really well explained in [this](https://waywardstrategist.com/2015/06/07/time-as-a-resource-part-2-multiplayer-map-design/) article about different ways of making map design in an RTS.
+
+### Examples
+
+## 1 player campaign
+
+* Progression
+
+
+### Examples
+
+[Here](http://www.ultimaratioregum.co.uk/game/tag/rts/) you can find an article that puts various examples of interesting ways that Command & Conquer aproaches their 1p levels.
+
+You can find [here](https://waywardstrategist.com/2015/05/26/time-as-a-resource-part-1-single-player-map-design/) an article about balancing the progression in RTS maps, taking in account time as a gameplay component.
+
+
