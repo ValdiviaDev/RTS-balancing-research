@@ -21,6 +21,7 @@ If you are new to the genre and want to learn about the RTS genre and what is it
   * [1 player campaign](https://valdiviadev.github.io/RTS-balancing-research/#1-player-campaign)
     * [Examples](https://valdiviadev.github.io/RTS-balancing-research/#examples)
 * [Playtesting](https://valdiviadev.github.io/RTS-balancing-research/#playtesting)
+* [Bibliography](https://valdiviadev.github.io/RTS-balancing-research/#bibliography)
 
 # Unit balancing
 
@@ -359,12 +360,18 @@ Here you can watch a video from _Extra Credits_ in which they explain this conce
 
 # Technology trees and game economy
 
+## About Technology Trees
+
 The first thing to take in account when building a tech tree are the elements that compose it:
 
 * Buildings
 * Units
 * Upgrades
 * Other
+
+## Game economy
+
+### Construction time
 
 # Artificial Intelligence
 
@@ -417,19 +424,24 @@ As an example, here you can see an scheme about the different routes the players
 
 ## 1 player campaign
 
-The main basic pilar to make a 1 player campaign map for an RTS is that of:
+The main basic pilars to make a 1 player campaign map for an RTS is that of:
 
 * Progression
+* Clear objectives
 
-Unlike maps for competitive modes, that need to be symmetrical to avoid unbalance on any match of the game, 1 player RTS games or campaigns need to focus on the basic principle of progression. The player needs to feel that they improve in the level and that they are becoming better at conquering the game, although it may just be that the way of the designers of guiding the player through a level, is done in such a way that the player thinks that all the progression made in the level is thanks to their own skill. Of course, in every balanced game, the player becomes better thanks to the careful and non intrusive guidance that the game offers, linking up to the concept of player progression; but this is more of a general video game balancing aspect, than one of RTS maps.
+Unlike maps for competitive modes, that need to be symmetrical to avoid unbalance on any match of the game, 1 player RTS games or campaigns need to focus on the basic principle of progression. The player needs to feel that they improve in the level and that they are becoming better at conquering the game, although it may just be that the way of the designers of guiding the player through a level, is done in such a way that the player thinks that all the progression made in the level is thanks to their own skill. Of course, in every balanced game, the player becomes better thanks to the careful and non-intrusive guidance that the game offers, linking up to the concept of player progression; but this is more of a general video game balancing aspect, than one of RTS maps.
 
-As there isn't a set way to make a player feel progresion, I'm will explain some of the fundamental aspects of this topic through some examples.
+The map has to define a clear objective or objectives for the player to fulfill. If the player can quickly identify the main objective, they'll know at any given moment how much progression they have done, something that encourages the player to keep playing. 
+
+As there isn't a set way to make a player feel progresion, I will explain some of the fundamental aspects of this topic through some examples.
 
 ### Examples
 
 To explain more in detail how to make the player feel that they progress in the game through the map, I'll be deconstructing two maps from Warcraft II.
 
-The first map I'll be tackling is [Grim Batol](http://wowwiki.wikia.com/wiki/Grim_Batol_(Warcraft_II)), the 7th mission of the human campaign.
+The first map I'll be tackling is [Grim Batol](http://wowwiki.wikia.com/wiki/Grim_Batol_(Warcraft_II)), the 7th mission of the human campaign. In this map the player's objective is to destroy five enemy oil refineries, that are found in the bottom-right part of the map. The units that the player can control are found in the top-left part of the map, so the player has a long way to travel. The first thing that the player will notice is that, aside from the units they posess, they have two boats to transport they units through the river. The utility of these boats, is to transport peasants safely to the other side of the river, as all the other attack units will have to go downwards on the map to rescue three ballistas that are being captive by the enemy. By obtaining these ballistas, the player will obtain a sense of becoming stronger, and even if it isn't ovbious, they also feel compelled by having in some way conquered the left part of the map by killing all the enemies on it.
+
+<img src="Images/Maps/GrimBatol11.jpg" width="800">
 
 As with competitive map balance for an RTS, the best way to conceptualize a map is through drawings, diagrams and schemes. Drawings of how the map will be structured, which elements you will use in the map, and how you would dispose them and the toutes the player could take. The same goes for schemes and diagrams.
 
@@ -441,3 +453,66 @@ As with competitive map balance for an RTS, the best way to conceptualize a map 
 ***If you want to know a more general approach on how to make a level in any video game, I advise you to read this [article](https://gamedevelopment.tutsplus.com/tutorials/a-beginners-guide-to-designing-video-game-levels--cms-25662).***
 
 # Playtesting
+
+# Bibliography
+
+**About intransitive mechanics (rock-paper-scissors)**
+
+https://gamebalanceconcepts.wordpress.com/2010/09/01/level-9-intransitive-mechanics/
+https://gamedev.stackexchange.com/questions/144995/rts-balancing-for-units-with-different-costs
+https://www.gamedev.net/forums/topic/685693-rts-unit-balance/
+https://en.wikipedia.org/wiki/Zero-sum_game
+http://zero-k.info/Forum/Thread/22670?page=1
+
+**Extra credits _Perfect Imbalance_ video**
+
+https://www.youtube.com/watch?v=e31OSVZF77w
+ 
+**Abstracts**
+
+https://brage.bibsys.no/xmlui/bitstream/handle/11250/2463289/13662_FULLTEXT.pdf?sequence=1
+http://ceur-ws.org/Vol-1969/paper-03.pdf
+http://www.cs.mun.ca/~dchurchill/pdf/DavidChurchill_phd_thesis.pdf
+ 
+ 
+**Warcraft II strategy guide**
+
+http://classic.battle.net/war2/strategy.shtml
+ 
+**Warcraft II Tech tree**
+http://classic.battle.net/war2/basic/hbuildings.shtml (humans)
+http://classic.battle.net/war2/basic/obuildings.shtml (orcs)
+
+**Abstracts About build order**
+
+https://pdfs.semanticscholar.org/7367/f5772cacdf7ab40d8bb948354ed8e7662e09.pdf
+https://skatgame.net/mburo/ps/aiide11-bo.pdf
+http://www.dtic.mil/dtic/tr/fulltext/u2/a599118.pdf
+ 
+**Tech Tree information**
+https://books.google.es/books?id=RhVoR-ATDlUC&pg=PT251&lpg=PT251&dq=tech+tree+balancing&source=bl&ots=b55nW0D4G-&sig=oTwLejX0L3NGmAfw2_93jd--E1E&hl=es&sa=X&ved=0ahUKEwjW1I2suLXZAhVmneAKHfR5Cro4ChDoAQhsMAk#v=onepage&q=tech%20tree%20balancing&f=false
+https://www.quora.com/How-are-technology-trees-developed-for-strategy-games
+https://books.google.es/books?id=E9JG6JjPU-sC&pg=PA232&lpg=PA232&dq=tech+tree+balancing&source=bl&ots=O0m7obCLEp&sig=RR3Bq0d6NJy-weW4bMYmOc29_jU&hl=es&sa=X&ved=0ahUKEwiExt70vrXZAhVPm-AKHWmwCdcQ6AEIfDAH#v=onepage&q=tech%20tree%20balancing&f=false
+https://forums.civfanatics.com/threads/how-to-design-a-tech-tree.274045/
+https://apolyton.net/forum/miscellaneous/archives/apolyton-community-archive/58720-designing-the-ultimate-tech-tree
+
+**starcraft 2 data spreadsheets**
+https://us.battle.net/forums/en/sc2/topic/2721384445
+https://www.reddit.com/r/starcraft/comments/7h8mke/ragnarokss_zerg_perfect_build_orderspreadsheet/
+
+**Level Design information**
+
+https://gamedevelopment.tutsplus.com/tutorials/a-beginners-guide-to-designing-video-game-levels--cms-25662
+http://www.ultimaratioregum.co.uk/game/tag/rts/
+https://gamedev.stackexchange.com/questions/2370/properties-of-good-rts-level-design
+https://waywardstrategist.com/2015/05/26/time-as-a-resource-part-1-single-player-map-design/
+https://waywardstrategist.com/2015/06/07/time-as-a-resource-part-2-multiplayer-map-design/
+https://theussner.wordpress.com/2010/09/13/rts-level-design-the-layout-part-1/
+
+**Miscelaneous**
+
+https://boardgamegeek.com/blogpost/28447/internal-balance-game-design
+https://www.gamasutra.com/view/feature/134768/understanding_balance_in_video_.php?page=3
+http://www.oxeyegames.com/rts-game-play-part-6-visible-balancing/
+https://dtai.cs.kuleuven.be/events/MLSA13/presentations/bosc.pdf
+https://www.gamasutra.com/blogs/BrandonCasteel/20170306/292982/The_Balance_of_Power_Progression_and_Equilibrium_in_RealTime_StrategyGames.php
