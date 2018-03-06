@@ -14,7 +14,13 @@ If you are new to the genre and want to learn about the RTS genre and what is it
    * [Intransitive mechanics applied to an RTS game](https://valdiviadev.github.io/RTS-balancing-research/#intransitive-mechanics-applied-to-an-rts-game)
      * [Other aspects to take in account](https://valdiviadev.github.io/RTS-balancing-research/#other-aspects-to-take-in-account)
     * [Interpreting the probability calculations](https://valdiviadev.github.io/RTS-balancing-research/#interpreting-the-probability-calculations)
-* [](https://valdiviadev.github.io/RTS-balancing-research/#interpreting-the-probability-calculations)
+* [Technology trees and game economy](https://valdiviadev.github.io/RTS-balancing-research/#technology-trees-and-game-economy)
+* [Artificial Intelligence](https://valdiviadev.github.io/RTS-balancing-research/#artificial-intelligence)
+* [Map structuring](https://valdiviadev.github.io/RTS-balancing-research/#map-structuring)
+  * [Competitive Games](https://valdiviadev.github.io/RTS-balancing-research/#competitive-games)
+  * [1 player campaign](https://valdiviadev.github.io/RTS-balancing-research/#1-player-campaign)
+    * [Examples](https://valdiviadev.github.io/RTS-balancing-research/#examples)
+
 # Unit balancing
 
 Units and unit management is one of the core components of any RTS video game. To make the combat in RTS games engaging, it is important to have a balanced roster of units. Without a good unit balance, the strategy part of a real strategy game would fall flat, and the game would not feel as a strategy game, but something like a construction simulation game with units that eliminate each other.
@@ -359,7 +365,7 @@ The first thing to take in account when building a tech tree are the elements th
 * Upgrades
 * Other
 
-# AI
+# Artificial Intelligence
 
 # Map structuring
 
@@ -408,8 +414,6 @@ As an example, here you can see an scheme about the different routes the players
 /////////////////////
 
 To know more about this topic and a little bit about balanced symmetrical maps, you can  read [this](https://waywardstrategist.com/2015/06/07/time-as-a-resource-part-2-multiplayer-map-design/) article about different ways of making map design in an RTS.
-
-### Examples
 
 ## 1 player campaign
 
