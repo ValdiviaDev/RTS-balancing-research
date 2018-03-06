@@ -410,6 +410,7 @@ There's not only one path in which the players can set their second and third ba
 For achieving succesfully the crafting of a map, the most useful tools to use are **squetches** and **schemes**. Squetches are incredibly important to assure that the map and gameplay elements of the map are symmetrical, and for drawing the possible paths that players could take, like I've done in the last two photos. Schemes are mostly useful for this second part, as if you have a drawing or diagram with too much arrows and numbers it can become extremely confusing. 
 
 <img src="Images/Maps/scheme1.png" width="600">
+
 As an example, here you can see an scheme about the different routes the players could take in a map, and the possible clashes they may have in any specific situation, marked with red "X"s.
 
 ***To extend your knowledge on this topic, you can  read [this](https://waywardstrategist.com/2015/06/07/time-as-a-resource-part-2-multiplayer-map-design/) article about different ways of making a good multiplayer map design in an RTS game.***
@@ -428,7 +429,7 @@ As there isn't a set way to make a player feel progresion, I'm will explain some
 
 To explain more in detail how to make the player feel that they progress in the game through the map, I'll be deconstructing two maps from Warcraft II.
 
-//////////////////////////////
+The first map I'll be tackling is [Grim Batol](http://wowwiki.wikia.com/wiki/Grim_Batol_(Warcraft_II)), the 7th mission of the human campaign.
 
 As with competitive map balance for an RTS, the best way to conceptualize a map is through drawings, diagrams and schemes. Drawings of how the map will be structured, which elements you will use in the map, and how you would dispose them and the toutes the player could take. The same goes for schemes and diagrams.
 
