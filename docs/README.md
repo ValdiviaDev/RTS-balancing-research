@@ -304,10 +304,12 @@ This table would give the same results in the probability calculations, as they 
 
 ### Other aspects to take in account
 
-I've calculated the payoff table having only one cost, but in almost any RTS there's more than one parameter to consider when scouting a unit. This different parameters could be for example, gold, wood and oil; like in the 1995 [Blizzard](https://www.blizzard.com)'s game, [Warcraft II](https://en.wikipedia.org/wiki/Warcraft_II:_Tides_of_Darkness).
+I've calculated the payoff table having only one cost, but in almost any RTS there's more than one parameter to consider when scouting a unit. This different parameters could be for example; gold, wood and oil; like in the 1995 [Blizzard](https://www.blizzard.com)'s game, [Warcraft II](https://en.wikipedia.org/wiki/Warcraft_II:_Tides_of_Darkness).
+In this case, we should assign a **rarity index** to every  one of these three resources. Let's say we only have these three resources to consider. I'll call them **a**, **b** and **c**; and I'll call every rarity cost as the recource + RI. With this we can extrpolate this fromula for calculating a total unit's cost.
 
-//FORMULA
+**cost =  a * aRI + b * bRI + c * cRI**
 
+I'll talk more IN depth about this aspect of an RTS [later]().
 
 //DPS
 
