@@ -6,8 +6,15 @@ Of course, this is no different to real-time-strategy ([RTS](https://en.wikipedi
 
 In this research document I’ll be explaining some useful methods to make a balanced RTS video game, taking in account the most important systems and elements to balance in this genre. This systems that I’ll be tackling are; the **unit system**, **technology trees** (tech trees for short), **artificial intelligence**, and **maps or stages**.
 
-If you are new to the genre and want to learn about the RTS genre and what is all about I encourage you to read this [article](https://waywardstrategist.com/2015/09/25/what-is-an-rts-game/). 
+If you are new to the genre and want to learn about the RTS genre and what is it all about, I encourage you to read this [article](https://waywardstrategist.com/2015/09/25/what-is-an-rts-game/). 
 
+# Index
+* [Unit balancing](https://valdiviadev.github.io/RTS-balancing-research/#unit-balancing) 
+   * [Intransitive mechanics and Rock-Paper-Scissors](https://valdiviadev.github.io/RTS-balancing-research/#intransitive-mechanics-and-rock-paper-scissors)
+   * [Intransitive mechanics applied to an RTS game](https://valdiviadev.github.io/RTS-balancing-research/#intransitive-mechanics-applied-to-an-rts-game)
+     * [Other aspects to take in account](https://valdiviadev.github.io/RTS-balancing-research/#other-aspects-to-take-in-account)
+    * [Interpreting the probability calculations](https://valdiviadev.github.io/RTS-balancing-research/#interpreting-the-probability-calculations)
+* [](https://valdiviadev.github.io/RTS-balancing-research/#interpreting-the-probability-calculations)
 # Unit balancing
 
 Units and unit management is one of the core components of any RTS video game. To make the combat in RTS games engaging, it is important to have a balanced roster of units. Without a good unit balance, the strategy part of a real strategy game would fall flat, and the game would not feel as a strategy game, but something like a construction simulation game with units that eliminate each other.
@@ -343,7 +350,7 @@ Here you can watch a video from _Extra Credits_ in which they explain this conce
 <iframe width="560" height="315" src="https://www.youtube.com/embed/e31OSVZF77w" frameborder="0" allowfullscreen></iframe>
 
 
-# Technology trees and build order
+# Technology trees and game economy
 
 The first thing to take in account when building a tech tree are the elements that compose it:
 
@@ -419,5 +426,8 @@ To explain more in detail how to make feel that the player progresses in the gam
 [Here](http://www.ultimaratioregum.co.uk/game/tag/rts/) you can find an article that puts various examples of interesting ways that Command & Conquer aproaches their 1p levels.
 
 You can find [here](https://waywardstrategist.com/2015/05/26/time-as-a-resource-part-1-single-player-map-design/) an article about balancing the progression in RTS maps, taking in account time as a gameplay component.
+
+
+***If you want to know a more general approach on how to make a level in any video game, I advise you to read this [article](https://gamedevelopment.tutsplus.com/tutorials/a-beginners-guide-to-designing-video-game-levels--cms-25662).***
 
 
