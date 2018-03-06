@@ -243,7 +243,7 @@ From the results of the probability calculation, it can be extrapolated that our
 
 This method is the base of balancing a game with intransitive mechanics, but RTS video games have more depth than just costs and what I've called “additional damage index”, that isn’t a real parameter that this type of games have. Aside from the unit cost, the most tangible variables of a unit to take in account are its life points or health points (HP), and the amount of damage it does, in other words, how strong this unit is.
 
-One of the methods to calculate the payoff table taking these two parameters in account, (HP and damage) is to take the damage per second (DPS) that every unit would do to another unit and not the damage it would be done by the unit taking in account this unit alone. To put an example, a ground melee unit may do 40 units of DPS to another ground unit, but 0 to an aerial unit. In this case we could have this three types of dps:
+One of the methods for calculating the payoff table taking these two parameters in account, (HP and damage) is to take the damage per second (DPS) that every unit would do to another unit, intead of the damage it would be done by the unit taking in account this unit alone. To put an example, a ground melee unit may do 40 units of DPS to another ground unit, but 0 to an aerial unit. In this case we could have this three types of dps:
 
 * Heavy DPS: against ground melee units
 * Light DPS: against ground long range attack units
@@ -258,7 +258,7 @@ So in order to calculate the payoff for the table it would be better to use this
 ### payoff = B cost(A dps/B hp) - A cost(B dps/A hp)
 
 This table would give the same results in the probability calculations, as they did before, but using the formula from avobe.
-
+/////////////////////DO THIS
 <table>
 
 <tr>
@@ -301,6 +301,16 @@ This table would give the same results in the probability calculations, as they 
 
 ***You can find and edit (if you download it) a table that utilizes this last method explained in this [thread](https://www.gamedev.net/forums/topic/685693-rts-unit-balance/?tab=comments#comment-5329035). The table has been done by the user of this forum named "HappyCoder". This a really good table to use if you need to balance your units.***
 
+
+### Other aspects to take in account
+
+I've calculated the payoff table having only one cost, but in almost any RTS there's more than one parameter to consider when scouting a unit. This different parameters could be for example, gold, wood and oil; like in the 1995 [Blizzard](https://www.blizzard.com)'s game, [Warcraft II](https://en.wikipedia.org/wiki/Warcraft_II:_Tides_of_Darkness).
+
+//FORMULA
+
+
+//DPS
+
 I've taken in account really tangible parameters of a unit, like its HP or DPS, but there are other more intangible parameters to consider when balancing units, like **speed** or **range**. One way of telling which range and speed a unit should have could be by commmon sense. For example, a more powerful unit in damage should be slower, or have less range; but you can also make some modifications to the formula I explained before. 
 
 ***You can find some more calculations about unit costs, taking in account these more abstract unit parameters in this [thread](http://zero-k.info/Forum/Thread/22670?page=1) of this [Zero-K forum](http://zero-k.info/Forum/). Calculations and graphics made by the user of the forum named "Brackman".***
@@ -334,19 +344,30 @@ When balancing maps and how they should be structured in RTS games, the first th
  
 ## Competitive Games
 
-When making a competitive map for an RTS game there is one basic principle to take in account, and the principal pilar to return to when struggling to make a map structuring decision:
+When making a competitive map for an RTS game there is one basic principle to take in account, and the principal pilar to return to, when struggling to make a map structuring decision:
 
 * Symmetry
 
-Symmetry
+The most simple, yet most effective way to make a balanced RTS map for a competitive game is to make it symmetrical. It is very ovbious that a non-symetrical map can be extremly unbalanced, as one player would have advantage over the other in certain areas, like for example the traversing of the map being easier, or one player having more recouces to its disposition than the other.
 
-Of course, not everything in the map should be symmetrical, as it would beacame stale very quickly if it was this way, but the three main things to make symmetrical in a competitive map are:
+As an example for explaining how an RTS competitive map should be, I'll be using the a Starcraft 2's map named [Blistering Sands](http://liquipedia.net/starcraft2/Blistering_Sands).
+
+<img src="Images/Maps/Blistering_Sands11.jpg" width="800">
+
+Of course, not everything in the map should be symmetrical, as it would beacame stale very quickly if it was this way, but the two main things to make symmetrical in a competitive map are:
 
 * Gameplay elements
-* Landmarks
 * Structure
 
-Aside of making the map symmetrical in orther to not give an advantage to a player over the other, when designing a competitive level, the designer should set the recources in a certain way that the players are encouraged to slowly go towards each other. It is also important that this paths that the players are encouraged to take are divesre; in other words, there should be more than one way in which the players can encounter each other and engage in battle.
+These two aspects need to be symmetrical, as I commented earlier, to avoid one player of having avantage over the other. As it can be seen in the image below; the two player's bases, the recouces' positions (crystals and gas geysers) and even the observatories that get crossed by the line are completly symmetrical.
+
+<img src="Images/Maps/Blistering_Sands3.png" width="400">
+
+As I mentioned earlier, not everything in a competitive map must be 100% symetrical. The one aspect of a map that can not, and shouldn't be symmetrical are **non gameplay elements**, like **textures or backgrounds**. When making these elements of the stage non-symetrical, you make sure that the map dosen't feel as artificial as its symmetry makes it feel. As we can see marked in green in the Blistering Sands map, the backrounds for the two sides are not the same; and although the stage's structure is the same, if looked closely, it can be observed that there are small deformations in the terrain that vary from one part of the scenary to the other.
+
+<img src="Images/Maps/Blistering_Sands5.png" width="400">
+
+Aside of making the map symmetrical in order to not give an advantage to one player over the other, when designing a competitive level, the designer should set the recources in a certain way that the players are encouraged to slowly go towards each other. It is also important that these paths that the players are encouraged to take are divesre; in other words, there should be more than one way in which the players should encounter each other and engage in combat.
 
 This concept is really well explained in [this](https://waywardstrategist.com/2015/06/07/time-as-a-resource-part-2-multiplayer-map-design/) article about different ways of making map design in an RTS.
 
@@ -354,10 +375,15 @@ This concept is really well explained in [this](https://waywardstrategist.com/20
 
 ## 1 player campaign
 
+The main basic pilar to make a 1 player campaign for an RTS work is that of:
+
 * Progression
 
+Unlike maps for competitive modes that need to be symmetrical to avoid unbalance on any match of the game, 1 player RTS games or campaigns need to focus on the basic principle of progression. The player needs to feel that they improve in the level and that they are becoming better at conquering the game, although it may just be that the way of the designers of guiding the player through a level, is done in such a way that the player thinks that all the progression made in the level is thanks to their own skill. Of course, in every balanced game, the player becomes better thanks to the careful and non intrusive guidance that the game offers, linking up to the concept of player progression; but this is more of a general video game balancing aspect, than one of RTS maps.
 
 ### Examples
+
+To explain more in detail how to make feel that the player progresses in the game through the map, I'm going to explain some examples from Blizzard's 1995 game, Warcraft 2.
 
 [Here](http://www.ultimaratioregum.co.uk/game/tag/rts/) you can find an article that puts various examples of interesting ways that Command & Conquer aproaches their 1p levels.
 
