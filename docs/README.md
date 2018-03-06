@@ -439,9 +439,27 @@ As there isn't a set way to make a player feel progresion, I will explain some o
 
 To explain more in detail how to make the player feel that they progress in the game through the map, I'll be deconstructing two maps from Warcraft II.
 
-The first map I'll be tackling is [Grim Batol](http://wowwiki.wikia.com/wiki/Grim_Batol_(Warcraft_II)), the 7th mission of the human campaign. In this map the player's objective is to destroy five enemy oil refineries, that are found in the bottom-right part of the map. The units that the player can control are found in the top-left part of the map, so the player has a long way to travel. The first thing that the player will notice is that, aside from the units they posess, they have two boats to transport they units through the river. The utility of these boats, is to transport peasants safely to the other side of the river, as all the other attack units will have to go downwards on the map to rescue three ballistas that are being captive by the enemy. By obtaining these ballistas, the player will obtain a sense of becoming stronger, and even if it isn't ovbious, they also feel compelled by having in some way conquered the left part of the map by killing all the enemies on it.
+The first map I'll be tackling is [Grim Batol](http://wowwiki.wikia.com/wiki/Grim_Batol_(Warcraft_II)), the 7th mission of the human campaign. In this map the player's objective is to destroy five enemy oil refineries, that are found in the bottom-right part of the map. The units that the player can control are found in the top-left part of the map, so the player has a long way to travel. The first thing that the player will notice is that, aside from the units they posess, they have two boats to transport their units through the river. The utility of these boats, is to transport peasants safely to the other side of the river, as all the other attack units will have to go downwards on the map to rescue three ballistas that are being captive by the enemy. By obtaining these ballistas, the player will obtain a sense of becoming stronger, and even if it isn't ovbious, they will also feel compelled by having in some way conquered the left part of the map by killing all the enemies on it.
 
 <img src="Images/Maps/GrimBatol11.jpg" width="800">
+
+//
+
+<img src="Images/Maps/GrimBatol33.jpg" width="800">
+
+//Lineal design.
+
+<img src="Images/Maps/GrimBatol5.png" width="400">
+
+The second map that I'll be explaining is [Tyr's Hand](http://wowwiki.wikia.com/wiki/Tyr%27s_Hand_(WC2)), the 8th mission of the human campaign.
+
+<img src="Images/Maps/TyrsHand11.jpg" width="800">
+
+//
+
+<img src="Images/Maps/TyrsHand33.jpg" width="800">
+
+//Open map design.
 
 As with competitive map balance for an RTS, the best way to conceptualize a map is through drawings, diagrams and schemes. Drawings of how the map will be structured, which elements you will use in the map, and how you would dispose them and the toutes the player could take. The same goes for schemes and diagrams.
 
@@ -490,13 +508,15 @@ https://skatgame.net/mburo/ps/aiide11-bo.pdf
 http://www.dtic.mil/dtic/tr/fulltext/u2/a599118.pdf
  
 **Tech Tree information**
+
 https://books.google.es/books?id=RhVoR-ATDlUC&pg=PT251&lpg=PT251&dq=tech+tree+balancing&source=bl&ots=b55nW0D4G-&sig=oTwLejX0L3NGmAfw2_93jd--E1E&hl=es&sa=X&ved=0ahUKEwjW1I2suLXZAhVmneAKHfR5Cro4ChDoAQhsMAk#v=onepage&q=tech%20tree%20balancing&f=false
 https://www.quora.com/How-are-technology-trees-developed-for-strategy-games
 https://books.google.es/books?id=E9JG6JjPU-sC&pg=PA232&lpg=PA232&dq=tech+tree+balancing&source=bl&ots=O0m7obCLEp&sig=RR3Bq0d6NJy-weW4bMYmOc29_jU&hl=es&sa=X&ved=0ahUKEwiExt70vrXZAhVPm-AKHWmwCdcQ6AEIfDAH#v=onepage&q=tech%20tree%20balancing&f=false
 https://forums.civfanatics.com/threads/how-to-design-a-tech-tree.274045/
 https://apolyton.net/forum/miscellaneous/archives/apolyton-community-archive/58720-designing-the-ultimate-tech-tree
 
-**starcraft 2 data spreadsheets**
+**Starcraft 2 data spreadsheets**
+
 https://us.battle.net/forums/en/sc2/topic/2721384445
 https://www.reddit.com/r/starcraft/comments/7h8mke/ragnarokss_zerg_perfect_build_orderspreadsheet/
 
