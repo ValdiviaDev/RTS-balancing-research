@@ -356,11 +356,11 @@ The first thing to take in account when building a tech tree are the elements th
 
 # Map structuring
 
-When balancing maps and how they should be structured in RTS games, the first thing to take in account is that balancing maps from a competitive RTS videogame is much different from balancing a map from a 1 player campaign mode, or a game that is strictly a 1 player RTS video game. Another thing to take in account is that, unlike previous sections, we are not working with numbers, but with the construction of a graphical terrain, so there wont be really precise methods or formulas for balancing a map. With all that said, let's start with the balance in competitive maps.
+When balancing maps and how they should be structured in RTS games, the first thing to take in account is that when balancing maps from a competitive RTS videogame, it is very different to balance a map from a 1 player campaign mode, or a game that is strictly a 1 player RTS video game. Another thing to take in account is that, unlike previous sections, we are not working with numbers, but with the construction of a graphical terrain, so there wont be really precise methods or formulas for balancing a map. With all that said, let's start with the balance in competitive maps.
  
 ## Competitive Games
 
-When making a competitive map for an RTS game there is one basic principle to take in account, and the principal pilar to return to, when struggling to make a map structuring decision:
+When making a competitive map for an RTS game there is one basic principle to take in account, and a principal pillar to return to, when struggling to make a map structuring decision:
 
 * Symmetry
 
@@ -375,7 +375,7 @@ Of course, not everything in the map should be symmetrical, as it would beacame 
 * Gameplay elements
 * Structure
 
-These two aspects need to be symmetrical, as I commented earlier, to avoid one player of having avantage over the other. As it can be seen in the image below; the two player's bases, the recouces' positions (crystals and gas geysers) and even the observatories that get crossed by the line are completly symmetrical.
+These two aspects of the map need to be symmetrical, as I commented earlier, to avoid one player of having avantage over the other. As it can be seen in the image below; the two player's bases, the recouces' positions (minerals and gas geysers) and even the observatories that get crossed by the divisory line, are completly symmetrical.
 
 <img src="Images/Maps/Blistering_Sands3.png" width="400">
 
@@ -383,7 +383,17 @@ As I mentioned earlier, not everything in a competitive map must be 100% symetri
 
 <img src="Images/Maps/Blistering_Sands5.png" width="400">
 
-Aside of making the map symmetrical in order to not give an advantage to one player over the other, when designing a competitive level, the designer should set the recources in a certain way that the players are encouraged to slowly go towards each other. It is also important that these paths that the players are encouraged to take are divesre; in other words, there should be more than one way in which the players should encounter each other and engage in combat.
+Aside of making the map symmetrical in order to not give an advantage to one player over the other, when designing a competitive level, the designer of the map should set the recources in a certain way that the players are encouraged to slowly go towards each other. It is also important that these paths that the players are encouraged to take are divesre; in other words, there should be more than one way in which the players should encounter each other and engage in combat.
+
+As it can be seen in the map, the resources of the game are disposed in a way that the player is encouraged to consequently set second and third bases where these resources are disposed in the map. This way of guiding the player and making them improve and **progress** is the main pillar for making a 1 player RTS map, that it is explaned [later](https://valdiviadev.github.io/RTS-balancing-research/#1-player-campaign) on this document.
+
+<img src="Images/Maps/Blistering_Sands6.png" width="400">
+
+There's not only one path in which the players can set their second and third bases, as they could go for the [rich mineral field](http://liquipedia.net/starcraft2/Rich_Mineral_Field) instead of the normal one to construct their third base. This could be considered a more risky option to take, as there's more probabilities that the rival would also want to go for the rich mineral field, thus making them confront early on, for the conquest of that field. Again, this is one of some of the posibilities for the two players to clash in this map. When designing a map, there should be taken in account several options that the players could carry out, and how a clash of strategies from both players would make them have to constantly addapt their strategy.
+
+<img src="Images/Maps/Blistering_Sands7.png" width="400">
+
+For achieving succesfully the crafting of a map, the most useful tools to use are **squetches** and **schemes**. Squetches are incredibly important to assure that the map and gameplay elements of the map are symmetrical, and for drawing the possible paths that players could take, like I've done in the last two photos. Schemes are mostly useful for this second part, as if you have a drawing or diagram with too much arrows and numbers it can become extremely confusing. 
 
 This concept is really well explained in [this](https://waywardstrategist.com/2015/06/07/time-as-a-resource-part-2-multiplayer-map-design/) article about different ways of making map design in an RTS.
 
