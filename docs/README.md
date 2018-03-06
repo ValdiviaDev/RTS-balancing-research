@@ -20,6 +20,7 @@ If you are new to the genre and want to learn about the RTS genre and what is it
   * [Competitive Games](https://valdiviadev.github.io/RTS-balancing-research/#competitive-games)
   * [1 player campaign](https://valdiviadev.github.io/RTS-balancing-research/#1-player-campaign)
     * [Examples](https://valdiviadev.github.io/RTS-balancing-research/#examples)
+* [Playtesting](https://valdiviadev.github.io/RTS-balancing-research/#playtesting)
 
 # Unit balancing
 
@@ -411,27 +412,31 @@ For achieving succesfully the crafting of a map, the most useful tools to use ar
 <img src="Images/Maps/scheme1.png" width="600">
 As an example, here you can see an scheme about the different routes the players could take in a map, and the possible clashes they may have in any specific situation, marked with red "X"s.
 
-/////////////////////
-
-To know more about this topic and a little bit about balanced symmetrical maps, you can  read [this](https://waywardstrategist.com/2015/06/07/time-as-a-resource-part-2-multiplayer-map-design/) article about different ways of making map design in an RTS.
+***To extend your knowledge on this topic, you can  read [this](https://waywardstrategist.com/2015/06/07/time-as-a-resource-part-2-multiplayer-map-design/) article about different ways of making a good multiplayer map design in an RTS game.***
 
 ## 1 player campaign
 
-The main basic pilar to make a 1 player campaign for an RTS work is that of:
+The main basic pilar to make a 1 player campaign map for an RTS is that of:
 
 * Progression
 
-Unlike maps for competitive modes that need to be symmetrical to avoid unbalance on any match of the game, 1 player RTS games or campaigns need to focus on the basic principle of progression. The player needs to feel that they improve in the level and that they are becoming better at conquering the game, although it may just be that the way of the designers of guiding the player through a level, is done in such a way that the player thinks that all the progression made in the level is thanks to their own skill. Of course, in every balanced game, the player becomes better thanks to the careful and non intrusive guidance that the game offers, linking up to the concept of player progression; but this is more of a general video game balancing aspect, than one of RTS maps.
+Unlike maps for competitive modes, that need to be symmetrical to avoid unbalance on any match of the game, 1 player RTS games or campaigns need to focus on the basic principle of progression. The player needs to feel that they improve in the level and that they are becoming better at conquering the game, although it may just be that the way of the designers of guiding the player through a level, is done in such a way that the player thinks that all the progression made in the level is thanks to their own skill. Of course, in every balanced game, the player becomes better thanks to the careful and non intrusive guidance that the game offers, linking up to the concept of player progression; but this is more of a general video game balancing aspect, than one of RTS maps.
+
+As there isn't a set way to make a player feel progresion, I'm will explain some of the fundamental aspects of this topic through some examples.
 
 ### Examples
 
-To explain more in detail how to make feel that the player progresses in the game through the map, I'm going to explain some examples from Blizzard's 1995 game, Warcraft 2.
+To explain more in detail how to make the player feel that they progress in the game through the map, I'll be deconstructing two maps from Warcraft II.
 
-[Here](http://www.ultimaratioregum.co.uk/game/tag/rts/) you can find an article that puts various examples of interesting ways that Command & Conquer aproaches their 1p levels.
+//////////////////////////////
 
-You can find [here](https://waywardstrategist.com/2015/05/26/time-as-a-resource-part-1-single-player-map-design/) an article about balancing the progression in RTS maps, taking in account time as a gameplay component.
+As with competitive map balance for an RTS, the best way to conceptualize a map is through drawings, diagrams and schemes. Drawings of how the map will be structured, which elements you will use in the map, and how you would dispose them and the toutes the player could take. The same goes for schemes and diagrams.
+
+***[Here](http://www.ultimaratioregum.co.uk/game/tag/rts/) you can find an article that puts various examples of interesting ways that Command & Conquer aproaches their 1p levels.***
+
+***You can find [here](https://waywardstrategist.com/2015/05/26/time-as-a-resource-part-1-single-player-map-design/) an article about balancing the progression in RTS maps, taking in account time as a gameplay component.***
 
 
 ***If you want to know a more general approach on how to make a level in any video game, I advise you to read this [article](https://gamedevelopment.tutsplus.com/tutorials/a-beginners-guide-to-designing-video-game-levels--cms-25662).***
 
-
+# Playtesting
