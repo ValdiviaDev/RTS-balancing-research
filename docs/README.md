@@ -304,30 +304,44 @@ This table would give the same results in the probability calculations, as they 
 
 ### Other aspects to take in account
 
-I've calculated the payoff table having only one cost, but in almost any RTS there's more than one parameter to consider when scouting a unit. This different parameters could be for example; gold, wood and oil; like in the 1995 [Blizzard](https://www.blizzard.com)'s game, [Warcraft II](https://en.wikipedia.org/wiki/Warcraft_II:_Tides_of_Darkness).
-In this case, we should assign a **rarity index** to every  one of these three resources. Let's say we only have these three resources to consider. I'll call them **a**, **b** and **c**; and I'll call every rarity cost as the recource + RI. With this we can extrpolate this fromula for calculating a total unit's cost.
+I've calculated the payoff table having only one cost, but in almost any RTS there's more than one parameter to consider when scouting a unit. These different parameters could be for example; gold, wood and oil; like in the 1995 [Blizzard](https://www.blizzard.com) game, [Warcraft II](https://en.wikipedia.org/wiki/Warcraft_II:_Tides_of_Darkness).
+In this case, we should assign a **rarity index** to every  one of these three resources. A rarity index of 1 should be assigned to the most common resource of the game, and a index going from 1 to 2 to the more rare resources.
+Let's say we only have these three resources to consider. I'll call them **a**, **b** and **c**; and I'll call every rarity index as the recource + RI. With this we can extrpolate this fromula for calculating a total unit's cost:
 
 **cost =  a * aRI + b * bRI + c * cRI**
 
-I'll talk more IN depth about this aspect of an RTS [later]().
+I'll talk more in depth about this aspect of an RTS [later](https://valdiviadev.github.io/RTS-balancing-research/#technology-trees-and-build-order).
 
-//DPS
+Another important aspect that I didn't consider when making the **probability calculations** is that I only calculated them when we just had a payoff table of three units, (swordsman, gunman and flying machine) but these three units are just the tree unit types that we would be using a real RTS game. As you can see in the [table](https://www.gamedev.net/forums/topic/685693-rts-unit-balance/?tab=comments#comment-5329035) that I talked about before, there can of course be, more than three units on the payoff table, each one with its corresponding unit type. There could be two types of **probability calculations** that could be made:
 
-I've taken in account really tangible parameters of a unit, like its HP or DPS, but there are other more intangible parameters to consider when balancing units, like **speed** or **range**. One way of telling which range and speed a unit should have could be by commmon sense. For example, a more powerful unit in damage should be slower, or have less range; but you can also make some modifications to the formula I explained before. 
+* If you wanted to calculate every probability for every unit, you'd just have to calculate the probabilites for every one of the units. It is very useful to see how a theoretical RTS game in the making would be shaping up , but it is an extremely long calculation. For using it during the development of a game, it would be useful to implement an algorithm that made those calculations for you.
 
-***You can find some more calculations about unit costs, taking in account these more abstract unit parameters in this [thread](http://zero-k.info/Forum/Thread/22670?page=1) of this [Zero-K forum](http://zero-k.info/Forum/). Calculations and graphics made by the user of the forum named "Brackman".***
+* If you wanted to calculate how good is every one of these three types, you would just need to sum upp all the payoffs of every unit with the ones of their same type, and then make the probability calculations.
+
+As a reminder, these are the equations you should use for making the probability calculations (if taking in account three units, calling them "A", "B" and "C"):
+
+     A = (payoff A_c)*c + (payoff A_b)*b
+     B = (payoff B_a)*a + (payoff B_c)*c
+     C = (payoff C_b)*b + (payoff C_a)*a
+     A = B = C = 0
+     a + b + c = 1
+
+To finish with the unit balancing, I need to indeicate thet I've only taken in account really tangible parameters of a unit, like its HP or DPS, but there are other more intangible parameters to consider when balancing units, like their **speed** or **range**. One way of telling which range and speed a unit should have could be by commmon sense. For example, a more powerful unit in damage should be slower, or have less range; but you can also make some modifications to the formula I explained before. 
+
+***You can find some more calculations about unit costs, taking in account these more abstract unit parameters in this [thread](http://zero-k.info/Forum/Thread/22670?page=1) of this [Zero-K forum](http://zero-k.info/Forum/). Calculations and graphics are made by the user of the forum named "Brackman".***
+
+***You can also find an extensive explanation on the first part of this section, on how intransitive mechanics work and how to apply them to RTS and other types of games [here](https://gamebalanceconcepts.wordpress.com/2010/09/01/level-9-intransitive-mechanics/).***
 
 ## Interpreting the probability calculations
 
-It’s not always a good thing to have a game in perfect balance. A lot of unbalance makes a game frustrating and unfair, but a perfect balance makes a game stale. In the case of competitive games, this can turn off experienced players because of the stagnant nature the game has adopted, and also unexperienced players that can't addapt to the competitive, because of really grounded strategies, that they don’t let room for someone new to learn the basics. So when balancing units, it’s not the most effective to just make it perfectly balanced, but to try and see the importance of the unbalance in balanced games. 
+It’s not always a good thing to have a game in perfect balance. A lot of unbalance makes a game frustrating and unfair, but a perfect balance makes a game stale. In the case of competitive games, this can turn off experienced players because of the stagnant nature the game would have adopted; and unexperienced players wouldn't addapt to the game's [meta game](https://en.wikipedia.org/wiki/Metagaming), because of really grounded strategies in this meta, that wouldn't let room for someone new to learn the basics. So when balancing units, it maybe isn't the most effective balance strategy to just make them perfectly balanced. 
 
-So when a designer calculates the probabilities on how useful will be every unit or type of unit, they shoudn't attempt to make them perfecty equal, but to have them somewhat unbalanced to prevent the game from getting stale or monotonous.
+So when a designer calculates the probabilities on how useful every unit or type of unit would be, they shoudn't attempt to make them perfecty equal, but to try and see which implications would cause some small inbalance in the numbers of the probability calculations.
 
-Here you can watch a video from _Extra Credits_ in which they explain this concept in more depth.
+Here you can watch a video from _Extra Credits_ in which they explain this concept more in depth.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/e31OSVZF77w" frameborder="0" allowfullscreen></iframe>
 
-***You can find an extensive explanation on the first part of this section, on how intransitive mechanics work and how to apply them to RTS and other types of games [here](https://gamebalanceconcepts.wordpress.com/2010/09/01/level-9-intransitive-mechanics/).***
 
 # Technology trees and build order
 
