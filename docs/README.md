@@ -439,19 +439,19 @@ As there isn't a set way to make a player feel progresion, I will explain some o
 
 To explain more in detail how to make the player feel that they progress in the game through the map, I'll be deconstructing two maps from Warcraft II.
 
-The first map I'll be tackling is [Grim Batol](http://wowwiki.wikia.com/wiki/Grim_Batol_(Warcraft_II)), the 7th mission of the human campaign. In this map the player's objective is to destroy five enemy oil refineries, that are found in the bottom-right part of the map. The units that the player can control are found in the top-left part of the map, so the player has a long way to travel. The first thing that the player will notice is that, aside from the units they posess, they have two boats to transport their units through the river. The utility of these boats, is to transport peasants safely to the other side of the river, as all the other attack units will have to go downwards on the map to rescue three ballistas that are being captive by the enemy. By obtaining these ballistas, the player will obtain a sense of becoming stronger, and even if it isn't ovbious, they will also feel compelled by having in some way conquered the left part of the map by killing all the enemies on it.
+The first map I'll be tackling is [Grim Batol](http://wowwiki.wikia.com/wiki/Grim_Batol_(Warcraft_II)), the 7th mission of the human campaign. In this map the player's objective is to destroy five enemy oil refineries, that are found in the bottom-right part of the map. The units that the player can control are found in the top-left part of the map, so the player has a long way to travel. The first thing that the player will notice is that, aside from the units they possess, they have two boats to transport their units through the river. The utility of these boats, is to transport peasants safely to the other side of the river, as all the other attack units will have to go downwards on the map to rescue three ballistas that are being captive by the enemy. By obtaining these ballistas, the player will obtain a sense of becoming stronger, and even if it isn't ovbious, they will also feel compelled by having in some way conquered the left part of the map by killing all the enemies on it.
 
 <img src="Images/Maps/GrimBatol11.jpg" width="800">
 
-//
+After conquering the right part of the map, the player will have two enemy bases left to conquer, as it can be seen, framed in red in the image below. First of all, the player will have to cross the river and destroy the enemy base in the top-center of the map. After that, they will have to make their own base. This is an interesting twist compared to other stages of the game and other RTS games in general, because the player normally builds their base at the start of the level. By doing this, the designers are making feel to the player as if they were in an adventure map, but reminding them that they are still playing an RTS game, that needs to have a hevay focus on game economy and unit/base management. After establishing their base, the player will have to build a naval army and destroy the five oil refineries in the bottom-right of the map.
 
 <img src="Images/Maps/GrimBatol33.jpg" width="800">
 
-//Lineal design.
+As we can see, this map has a more lineal design, compared to more traditional stages from the game, as there's an strict set path the player needs to follow to obtain their objective. In this case, it isn't as important conquering enemy bases, as it is adquiring the objective of the mission. By doing this you make some sort of adventure map, as I said ealier. That makes an RTS game feel more fresh and dynamic, but at the same time you keep the progression component that these types of maps need to have.
 
 <img src="Images/Maps/GrimBatol5.png" width="400">
 
-The second map that I'll be explaining is [Tyr's Hand](http://wowwiki.wikia.com/wiki/Tyr%27s_Hand_(WC2)), the 8th mission of the human campaign.
+The second map that I'll be explaining is [Tyr's Hand](http://wowwiki.wikia.com/wiki/Tyr%27s_Hand_(WC2)), the 8th mission of the human campaign. This map is a much more traditional RTS map, in the sense that the progression that the player feels, it is aquired by conquering three enemy bases in order to succeed, instead of having a more especific objective. A little twist that this stage has is that you first have to reconquer your own base, that has been occupied because of a worker insurrection.
 
 <img src="Images/Maps/TyrsHand11.jpg" width="800">
 
