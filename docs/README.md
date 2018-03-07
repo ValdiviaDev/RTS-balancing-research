@@ -455,13 +455,13 @@ The second map that I'll be explaining is [Tyr's Hand](http://wowwiki.wikia.com/
 
 <img src="Images/Maps/TyrsHand11.jpg" width="800">
 
-//
+After the player reconquers their own base, they will have to build an army to take down the three enemy bases that are marked in red in the map below. Again, conquering a territory is something very usual that RTS games do when they want their players to feel progression. It is also very adequate for a war game, something that really helps in the game's immersion. An interesting aspect that this map and other Warcraft maps have is that the player can conquer each base in the order they want and take multiple paths in doing so. This is an incentive for the player to ideate more interesting and personal strategies, compared to some stages as the one I talked about earlier, that doesn't allow for the player to complete it in a lot of ways. This is something that is strictly necessary to make a good competitive map, as i mentioned earlier.
 
 <img src="Images/Maps/TyrsHand33.jpg" width="800">
 
-//Open map design.
+This map, has a more open design to the one before. This is a more traditional approach for RTS maps in which the objective is to just conquer the enemy base. Both ways of approaching a map are equally interesting, but ideating a lineal map is a more dangerous task than designing an open one, as it is something that can destroy the flow of an RTS, if done wrong.
 
-As with competitive map balance for an RTS, the best way to conceptualize a map is through drawings, diagrams and schemes. Drawings of how the map will be structured, which elements you will use in the map, and how you would dispose them and the toutes the player could take. The same goes for schemes and diagrams.
+As with competitive map balance for an RTS, the best way to conceptualize a map is through drawings, diagrams and schemes. Drawings of how the map will be structured, which elements you will use in the map, and how you would dispose them and the routes the player could take. The same goes for schemes and diagrams.
 
 ***[Here](http://www.ultimaratioregum.co.uk/game/tag/rts/) you can find an article that puts various examples of interesting ways that Command & Conquer aproaches their 1p levels.***
 
@@ -476,11 +476,11 @@ As with competitive map balance for an RTS, the best way to conceptualize a map 
 
 **About intransitive mechanics (rock-paper-scissors)**
 
-https://gamebalanceconcepts.wordpress.com/2010/09/01/level-9-intransitive-mechanics/
-https://gamedev.stackexchange.com/questions/144995/rts-balancing-for-units-with-different-costs
-https://www.gamedev.net/forums/topic/685693-rts-unit-balance/
-https://en.wikipedia.org/wiki/Zero-sum_game
-http://zero-k.info/Forum/Thread/22670?page=1
+[https://gamebalanceconcepts.wordpress.com/2010/09/01/level-9-intransitive-mechanics/](https://gamebalanceconcepts.wordpress.com/2010/09/01/level-9-intransitive-mechanics/)
+[https://gamedev.stackexchange.com/questions/144995/rts-balancing-for-units-with-different-costs](https://gamedev.stackexchange.com/questions/144995/rts-balancing-for-units-with-different-costs)
+[https://www.gamedev.net/forums/topic/685693-rts-unit-balance/](https://www.gamedev.net/forums/topic/685693-rts-unit-balance/)
+[https://en.wikipedia.org/wiki/Zero-sum_game](https://en.wikipedia.org/wiki/Zero-sum_game)
+[http://zero-k.info/Forum/Thread/22670?page=1](http://zero-k.info/Forum/Thread/22670?page=1)
 
 **Extra credits _Perfect Imbalance_ video**
 
@@ -491,8 +491,7 @@ https://www.youtube.com/watch?v=e31OSVZF77w
 https://brage.bibsys.no/xmlui/bitstream/handle/11250/2463289/13662_FULLTEXT.pdf?sequence=1
 http://ceur-ws.org/Vol-1969/paper-03.pdf
 http://www.cs.mun.ca/~dchurchill/pdf/DavidChurchill_phd_thesis.pdf
- 
- 
+  
 **Warcraft II strategy guide**
 
 http://classic.battle.net/war2/strategy.shtml
