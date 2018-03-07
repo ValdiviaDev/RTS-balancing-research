@@ -15,6 +15,10 @@ If you are new to the genre and want to learn about the RTS genre and what is it
      * [Other aspects to take in account](https://valdiviadev.github.io/RTS-balancing-research/#other-aspects-to-take-in-account)
     * [Interpreting the probability calculations](https://valdiviadev.github.io/RTS-balancing-research/#interpreting-the-probability-calculations)
 * [Technology trees and game economy](https://valdiviadev.github.io/RTS-balancing-research/#technology-trees-and-game-economy)
+    * [Technology trees](https://valdiviadev.github.io/RTS-balancing-research/#technology-trees)
+       * [Unit upgrade balance](https://valdiviadev.github.io/RTS-balancing-research/#unit-upgrade-balance)
+    * [Game economy](https://valdiviadev.github.io/RTS-balancing-research/#game-economy)
+       * [Build rate](https://valdiviadev.github.io/RTS-balancing-research/#build-rate)
 * [Artificial Intelligence](https://valdiviadev.github.io/RTS-balancing-research/#artificial-intelligence)
 * [Map structuring](https://valdiviadev.github.io/RTS-balancing-research/#map-structuring)
   * [Competitive Games](https://valdiviadev.github.io/RTS-balancing-research/#competitive-games)
@@ -360,18 +364,34 @@ Here you can watch a video from _Extra Credits_ in which they explain this conce
 
 # Technology trees and game economy
 
-## About Technology Trees
+Having a well balanced set of units is essential for any RTS game to give the chance to the player of developing intricate strategies. But in an RTS game, the player cannot just have their units appear whenever they want. Any RTS needs a set of buildings to summon their units, and this set of buildings needs to have a hierarchical system that determines which buildings do what, and when they can do it. Of course, any RTS game needs to have an internal game economy in order to give sense to this hierarchy of structures and units.
+
+## Technology trees
+
+[Technology trees](https://en.wikipedia.org/wiki/Technology_tree), or tech trees for short are a graphic representation of every piece of technology that a game should have and how the hierarchy of upgrades is structured. In the RTS case, this pieces of technology are mostly buildings. Tech trees are a really important tool both for game designers and for players. For designers, a tech tree is just a schematical representation of how the building system of an RTS game would work, so it's an essential tool to have during all the development of a game. For players, a tech tree helps a lot when trying to indentify which building does what, for novice players, and to ideate strategies, mostly related with [build orders](https://en.wikipedia.org/wiki/Build_order), for more advanced players.
+
+///////
 
 The first thing to take in account when building a tech tree are the elements that compose it:
 
 * Buildings
 * Units
-* Upgrades
+* Unit upgrades
 * Other
+
+### Unit upgrade balance
+
+Try and organize every unit in a way that in every situation of the game you can see how they would be balanced.
 
 ## Game economy
 
-### Construction time
+Get every resource, calculate their rarity with an index. 
+
+### Build rate
+
+**15 = 300 * 1 / X -> X = 20
+
+**time = (cost 1 * rec rarity 1 + cost 2 * rec rarity 2) / num
 
 # Artificial Intelligence
 
