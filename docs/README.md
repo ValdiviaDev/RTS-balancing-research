@@ -419,6 +419,13 @@ A recommendable way to start making a tech tree from scratch, is to first make a
 
 </table>
 
+Then, after having established every element of this building system, it would be convinient to already make an initial scheme about how everything would be organized: 
+
+* Which building upgrades into which
+* Which building allows to build each building
+* Which building produces each unit
+* Which building allows to make each upgrade
+
 ### Unit upgrade balance
 
 Try and organize every unit in a way that in every situation of the game you can see how they would be balanced.
