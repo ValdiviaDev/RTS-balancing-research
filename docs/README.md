@@ -370,7 +370,11 @@ Having a well balanced set of units is essential for any RTS game to give the ch
 
 [Technology trees](https://en.wikipedia.org/wiki/Technology_tree), or tech trees for short are a graphic representation of every piece of technology that a game should have and how the hierarchy of upgrades is structured. In the RTS case, this pieces of technology are mostly buildings. Tech trees are a really important tool both for game designers and for players. For designers, a tech tree is just a schematical representation of how the building system of an RTS game would work, so it's an essential tool to have during all the development of a game. For players, a tech tree helps a lot when trying to indentify which building does what, for novice players, and to ideate strategies, mostly related with [build orders](https://en.wikipedia.org/wiki/Build_order), for more advanced players.
 
-///////
+<img src="Images/TechTreesGameEconomy/Warcraft_2_human_tech_tree.JPG" width="400">
+
+<img src="Images/TechTreesGameEconomy/AOETechtree.png" width="800">
+
+These are some exaples of tech trees from famous RTS games. The first one is the human technology tree from Warcraft II (you can see it in more detail and find out more parameters of Warcraft II's buildings [here](http://classic.battle.net/war2/basic/hbuildings.shtml). The second one is from [Age of Empires](https://en.wikipedia.org/wiki/Age_of_Empires_(video_game)). As you can see with these examples, tech trees can be fairly simple, but can also be very complex (even more than the Age of Empires one). To ease their understandability and to solve their conglomeration of nodes, it is as easy as to divide them in parts or types of elements.
 
 The first thing to take in account when building a tech tree are the elements that compose it:
 
@@ -517,6 +521,7 @@ http://www.cs.mun.ca/~dchurchill/pdf/DavidChurchill_phd_thesis.pdf
 http://classic.battle.net/war2/strategy.shtml
  
 **Warcraft II Tech tree**
+
 http://classic.battle.net/war2/basic/hbuildings.shtml (humans)
 http://classic.battle.net/war2/basic/obuildings.shtml (orcs)
 
