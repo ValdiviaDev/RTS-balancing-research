@@ -2,9 +2,9 @@ My name is David Valdivia and I'm a student from the video games design and deve
 
 Game balance is the concept and action of shaping a game’s rules with the object to make this game’s rules and systems effective. Game balancing is a really important aspect to take in account both in board games and in video games, because an unbalanced game; in other words, a game with poor and/or unfair mechanics and systems; is a boring game to play, at its best; and a frustrating and unfair game to play, at its worst.
 
-Of course, this is no different to real-time-strategy ([RTS](https://en.wikipedia.org/wiki/Real-time_strategy)) video games. Balance in these types of games is extremely important because they are, as its name says, video games where the player has to ideate a strategy to complete a level or scenario, in individual 1 player RTS video games, and ideate an even more intricate and complex strategy to beat a human rival in competitive RTS video games.
+Of course, this is no different to real-time-strategy ([RTS](https://en.wikipedia.org/wiki/Real-time_strategy)) video games. Balance in these types of games is extremely important because they are, as its name says, video games where the player has to ideate a strategy to complete a level or scenario in individual 1 player RTS video games, and ideate an even more intricate and complex strategy to beat a human rival in competitive RTS video games.
 
-In this research document I’ll be explaining some useful methods to make a balanced RTS video game, taking in account the most important systems and elements to balance in this genre. This systems that I’ll be tackling are; the **unit system**, **technology trees** (tech trees for short), **artificial intelligence**, and **maps or stages**.
+In this research document I’ll be explaining some useful methods to make a balanced RTS video game, taking in account the most important systems and elements to balance in this genre. These systems that I’ll be tackling are; the **unit system**, **technology trees** (tech trees for short), **game economy**, **artificial intelligence**, and **maps or stages**.
 
 If you are new to the genre and want to learn about the RTS genre and what is it all about, I encourage you to read this [article](https://waywardstrategist.com/2015/09/25/what-is-an-rts-game/). 
 
@@ -29,7 +29,7 @@ If you are new to the genre and want to learn about the RTS genre and what is it
 
 # Unit balancing
 
-Units and unit management is one of the core components of any RTS video game. To make the combat in RTS games engaging, it is important to have a balanced roster of units. Without a good unit balance, the strategy part of a real strategy game would fall flat, and the game would not feel as a strategy game, but something like a construction simulation game with units that eliminate each other.
+Units and unit management are one of the core components of any RTS video game. To make the combat in RTS games engaging, it is important to have a balanced roster of units. Without a good unit balance, the strategy part of a real time strategy game would fall flat, and the game would not feel as a strategy game, but something like a construction simulation game with units that eliminate each other.
 
 ## Intransitive mechanics and Rock-Paper-Scissors
 
@@ -382,6 +382,42 @@ The first thing to take in account when building a tech tree are the elements th
 * Units
 * Unit upgrades
 * Other
+
+Buildings are the most important aspect of it and allow for the creation of units, unit upgrades and other entities, like for example, scout towers, in Warcraft's case. There has to be specified which buildings create each units, upgrade units, spceial units or entities; and in which conditions can they be created. What the unit upgrades mostly do is to better unit and special unit stats.
+
+A recommendable way to start making a tech tree from scratch, is to first make a table with the every element that will compose the tech tree, in this fashion:
+
+<table>
+
+<tr>
+<td>Buildings</td>
+<td>Units</td>
+<td>Upgrades</td>
+<td>Other</td>
+</tr>
+
+<tr>
+<td>House</td>
+<td>Swordsman</td>
+<td>Swordsman upgrade</td>
+<td>Tower 1</td>
+</tr>
+
+<tr>
+<td>Flat</td>
+<td>Gunman</td>
+<td>Gunman upgrade</td>
+<td>Tower 2</td>
+</tr>
+
+<tr>
+<td>Mansion</td>
+<td>Dragon</td>
+<td>Dragon upgrade</td>
+<td>-</td>
+</tr>
+
+</table>
 
 ### Unit upgrade balance
 
