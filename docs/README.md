@@ -438,7 +438,7 @@ Having the scheme made, we would already have a technology tree, but it's very l
 
 Let's say that in the making of a theoretical RTS game, if you've followed what I've explained in the unit balancing section, you'd just have to follow two simple steps. The first one would be to make a scheme with a spectrum of every possibility that the player could take when progressing the tech tree. Here's an example using my tree from before.
 
-<img src="Images/TechTreesGameEconomy/UnitSetSpectrum.jpg" width="500">
+<img src="Images/TechTreesGameEconomy/UnitSetSpectrum.jpg" width="700">
 
 This scheme shows every set of units that could be disposable in diferent moments of the game. You could take the towers into account, or you could discard them as being special units. In this case let's say the towers count as normal units. The second step we should make in this process is to make the **payoff tables** I talked about [here](https://valdiviadev.github.io/RTS-balancing-research/#intransitive-mechanics-applied-to-an-rts-game), for every set of units, and apply what I talk about in that section. Of course, you could have your own parameters in these calculations, but knowing how the unit balance would work in every phase of your game is extremelly useful. In my case I have 11 possible spectrums of unit sets. Not every set of units should have perfect balance, because that would harm the progress of the tech tree, but it should be at least be clear how much unbalance every set has; for example, one set of units with an upgraded unit, would make the rest of units worse in comparasion of that unit, so the player would be encouraged to upgrade the other units.
 
