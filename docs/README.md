@@ -329,7 +329,7 @@ Let's say we only have these three resources to consider. I'll call them **a**, 
 
 **cost =  a * aRI + b * bRI + c * cRI**
 
-I'll talk more in depth about this aspect of an RTS [later](https://valdiviadev.github.io/RTS-balancing-research/#technology-trees-and-build-order).
+I'll talk more in depth about this aspect of an RTS [later](https://valdiviadev.github.io/RTS-balancing-research/#game-economy).
 
 Another important aspect that I didn't consider when making the **probability calculations** is that I only calculated them when we just had a payoff table of three units, (swordsman, gunman and flying machine) but these three units are just the tree unit types that we would be using a real RTS game. As you can see in the [table](https://www.gamedev.net/forums/topic/685693-rts-unit-balance/?tab=comments#comment-5329035) that I talked about before, there can of course be, more than three units on the payoff table, each one with its corresponding unit type. There could be two types of **probability calculations** that could be made:
 
@@ -428,7 +428,7 @@ Then, after having established every element of this building system, it would b
 
 As an example, here's rough scheme of how the buildings and units proposed earlied would be organized. The arrows that go from one element to another are the building upgrades, and the arrows that cross elements are the units and upgrades that every building allows (each upgrade and unit that's allowed to produce with one building is allowed to produce in their upgrades).
 
-<img src="Images/TechTreesGameEconomy/RawTechTree.jpg" width="500">
+<img src="Images/TechTreesGameEconomy/RawTechTree.jpg" width="400">
 
 This in essence is already a tech tree, but a very raw one, we still have a long way before completing it.
 
@@ -438,11 +438,47 @@ Having the scheme made, we would already have a technology tree, but it's very l
 
 Let's say that in the making of a theoretical RTS game, if you've followed what I've explained in the unit balancing section, you'd just have to follow two simple steps. The first one would be to make a scheme with a spectrum of every possibility that the player could take when progressing the tech tree. Here's an example using my tree from before.
 
+<img src="Images/TechTreesGameEconomy/UnitSetSpectrum.jpg" width="500">
 
+This scheme shows every set of units that could be disposable in diferent moments of the game. You could take the towers into account, or you could discard them as being special units. In this case let's say the towers count as normal units. The second step we should make in this process is to make the **payoff tables** I talked about [here](https://valdiviadev.github.io/RTS-balancing-research/#intransitive-mechanics-applied-to-an-rts-game), for every set of units, and apply what I talk about in that section. Of course, you could have your own parameters in these calculations, but knowing how the unit balance would work in every phase of your game is extremelly useful. In my case I have 11 possible spectrums of unit sets. Not every set of units should have perfect balance, because that would harm the progress of the tech tree, but it should be at least be clear how much unbalance every set has; for example, one set of units with an upgraded unit, would make the rest of units worse in comparasion of that unit, so the player would be encouraged to upgrade the other units.
 
 ## Game economy
 
-Get every resource, calculate their rarity with an index. 
+Every RTS game has an internal economy in form of resourse gathering and managing. This is necessary in any RTS because without this system, the tech tree system would have no sense of being, as the progression of building and bettering your buildings and units would be none.
+
+The first step for creating a game economy system is to determine every resource type that the worker units will be able to gather in the game. When I talk about worker units, I'm talking about the units whose function is not to battle, but to gather resources and construct buildings. There's no set number on how many resources the game should have, but the game balancing is way more controlable when the game has a low number of resource types.
+
+As I briefley explained in a previous [section](https://valdiviadev.github.io/RTS-balancing-research/#other-aspects-to-take-in-account), every resource type needs to have a certain rarity regarding the others. This is represented mathematicaly with a rarity index; the recource type that has a rarity index of one is the most common resource type, the others will have an index from one to two.
+
+To calculate this index and to start determining how the economic system of the game will work, first it will have to be determined how many resource units there will be in a sample stage of the game, and how many resource every resource type will have.
+
+As an example, let's say we have 22.398 units of resource in a sample map;
+
+* 12.352 of these units of resource will be **gold**
+* 10.046 will be **lumber**
+
+We have more gold than lumber, so gold as being more common than lumber will have a **rarity index** of 1. To calculate the rarity index, we'll need to divide the two resources by the total quantity of resources.
+
+**gold/resources** ≈ 0,55
+**lumber/resources** ≈ 0,45
+
+After having done these calculations, to obtain the rarity index we will just subtract the result of the most common resource with the one that we want to obtain the index from, and then add 1 to the result. So in this case we would have:
+
+rar. indx. lumber =  0,54 - 0,45 + 1 = **1,1**
+
+So after having this, we can extrapollate the rarity index formula. The common resource will be called A, the uncommon resource will be called B and the total number of resources will be called R:
+
+**rar. indx. = A/R - B/R + 1**
+
+With this rarity index we will be able to calculate the total cost of anything we want to calculate the cost from, being buildings, units or upgrades; with this formula:
+
+**cost(n) =  a * aRI + b * bRI  + ... + (n-1) * (n-1)RI + n * nRI**
+
+This formula takes in account a number of resources n. a,b,c... are the resource quantity; the resource with the RI are the rarity index for each resource, and n is the last resource of every resource the player can dispose of, being n-1 the resource that comes before n.
+
+For conceptualizing a game economy system, we could also do the opposite from this, in other words, the desingers of the game could determine the number the resources the game has and its rarity, and calculate the number of resource units every stage should have.
+
+To let everything clear, when conceptualizing a level, using this rarity index to balance out how every resource will be distributed is extremelly useful, but it doesn't need to be 100% extremelly accurate, because as I explained [before](https://valdiviadev.github.io/RTS-balancing-research/#interpreting-the-probability-calculations), a little bit of unbalance can have positive results in the overall experiecne of the player.
 
 ### Build rate
 
