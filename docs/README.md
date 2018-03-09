@@ -426,6 +426,9 @@ Then, after having established every element of this building system, it would b
 * Which building produces each unit
 * Which building allows to make each upgrade
 
+
+<img src="Images/TechTreesGameEconomy/RawTechTree.jpg" width="500">
+
 ### Unit upgrade balance
 
 Try and organize every unit in a way that in every situation of the game you can see how they would be balanced.
