@@ -16,7 +16,7 @@ If you are new to the genre and want to learn about the RTS genre and what is it
     * [Interpreting the probability calculations](https://valdiviadev.github.io/RTS-balancing-research/#interpreting-the-probability-calculations)
 * [Technology trees and game economy](https://valdiviadev.github.io/RTS-balancing-research/#technology-trees-and-game-economy)
     * [Technology trees](https://valdiviadev.github.io/RTS-balancing-research/#technology-trees)
-       * [Unit upgrade balance](https://valdiviadev.github.io/RTS-balancing-research/#unit-upgrade-balance)
+       * [Tech tree balance](https://valdiviadev.github.io/RTS-balancing-research/#tech-tree-balance)
     * [Game economy](https://valdiviadev.github.io/RTS-balancing-research/#game-economy)
        * [Build rate](https://valdiviadev.github.io/RTS-balancing-research/#build-rate)
 * [Artificial Intelligence](https://valdiviadev.github.io/RTS-balancing-research/#artificial-intelligence)
@@ -374,7 +374,7 @@ Having a well balanced set of units is essential for any RTS game to give the ch
 
 <img src="Images/TechTreesGameEconomy/AOETechtree.png" width="800">
 
-These are some exaples of tech trees from famous RTS games. The first one is the human technology tree from Warcraft II (you can see it in more detail and find out more parameters of Warcraft II's buildings [here](http://classic.battle.net/war2/basic/hbuildings.shtml). The second one is from [Age of Empires](https://en.wikipedia.org/wiki/Age_of_Empires_(video_game)). As you can see with these examples, tech trees can be fairly simple, but can also be very complex (even more than the Age of Empires one). To ease their understandability and to solve their conglomeration of nodes, it is as easy as to divide them in parts or types of elements.
+These are some exaples of tech trees from famous RTS games. The first one is the human technology tree from Warcraft II (you can see it in more detail and find out more parameters of Warcraft II's buildings [here](http://classic.battle.net/war2/basic/hbuildings.shtml)). The second one is from [Age of Empires](https://en.wikipedia.org/wiki/Age_of_Empires_(video_game)). As you can see with these examples, tech trees can be fairly simple, but can also be very complex (even more than the Age of Empires one). To ease their understandability and to solve their conglomeration of nodes, it is as easy as to divide them in parts or types of elements.
 
 The first thing to take in account when building a tech tree are the elements that compose it:
 
@@ -383,7 +383,7 @@ The first thing to take in account when building a tech tree are the elements th
 * Unit upgrades
 * Other
 
-Buildings are the most important aspect of it and allow for the creation of units, unit upgrades and other entities, like for example, scout towers, in Warcraft's case. There has to be specified which buildings create each units, upgrade units, spceial units or entities; and in which conditions can they be created. What the unit upgrades mostly do is to better unit and special unit stats.
+Buildings are the most important aspect of it and allow for the creation of units, unit upgrades and other entities, like for example, scout towers, in Warcraft's case. There has to be specified which buildings create each units, upgrade units, spceial units or entities; and in which conditions can they be created. What the unit upgrades mostly do is better the units' and special units' stats.
 
 A recommendable way to start making a tech tree from scratch, is to first make a table with the every element that will compose the tech tree, in this fashion:
 
@@ -426,12 +426,19 @@ Then, after having established every element of this building system, it would b
 * Which building produces each unit
 * Which building allows to make each upgrade
 
+As an example, here's rough scheme of how the buildings and units proposed earlied would be organized. The arrows that go from one element to another are the building upgrades, and the arrows that cross elements are the units and upgrades that every building allows (each upgrade and unit that's allowed to produce with one building is allowed to produce in their upgrades).
 
 <img src="Images/TechTreesGameEconomy/RawTechTree.jpg" width="500">
 
-### Unit upgrade balance
+This in essence is already a tech tree, but a very raw one, we still have a long way before completing it.
 
-Try and organize every unit in a way that in every situation of the game you can see how they would be balanced.
+### Tech tree balance
+
+Having the scheme made, we would already have a technology tree, but it's very likely that this tree would be unbalanced. When balancing a tech tree, the most importat aspect to take into account is in which moment to allow the creation of every type of unit and upgrade. 
+
+Let's say that in the making of a theoretical RTS game, if you've followed what I've explained in the unit balancing section, you'd just have to follow two simple steps. The first one would be to make a scheme with a spectrum of every possibility that the player could take when progressing the tech tree. Here's an example using my tree from before.
+
+
 
 ## Game economy
 
