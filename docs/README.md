@@ -482,6 +482,14 @@ To let everything clear, when conceptualizing a level, using this rarity index t
 
 ### Build rate
 
+This game economy that has to be set up in an RTS game has a very clear function, that's the one of allowing the player to progressively build their army. As I said in the last section, this system needs a coherence in it's balancing, because an RTS game with a bad sense of progrssion, would greatly injure one of the two big parts of these types of games, that is the part of having to strategize a good way of managing your base to allow for a fast army construction.
+
+When utilizing a game economy system to determine the construction of a base and an army in the game, we have two parameters to take into account: the **cost** of each element, and how many **time to build** in seconds will each element dispose of. In this section I'll be focusing on how to have a nice and balanced build rate for the elements of an RTS game, respecting their cost.
+
+Before diving right into the calculations, it should be noted that as a rule of thumb, buildings should take more time and resources to build than unit upgrades, and unit upgrades should take more time and resources than units; because of permanency and significance in the overall game. In other words, buildings are more important than the other two elements for allowing their creation, and unit upgrades are more important that units, for being permanent and having more importance overall through the course of a level.
+
+<img src="Images/TechTreesGameEconomy/BuildRate.jpg" width="200">
+
 **15 = 300 * 1 / X -> X = 20
 
 **time = (cost 1 * rec rarity 1 + cost 2 * rec rarity 2) / num
