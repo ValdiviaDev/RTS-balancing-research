@@ -582,6 +582,10 @@ After the player reconquers their own base, they will have to build an army to t
 
 This map, has a more open design to the one before. This is a more traditional approach for RTS maps in which the objective is to just conquer the enemy base. Both ways of approaching a map are equally interesting, but ideating a lineal map is a more dangerous task than designing an open one, as it is something that can destroy the flow of an RTS, if done wrong.
 
+An essential aspect that a map in an RTS, or a level in any game has to have, is a good sense of pacing. This isn't much a aspect of game balancing, but more of a basic design aspect of designing a level that has to be taken and applicated systematically to every level to make the player feel invested in every part of the level, avoiding them to stop playing the game. Here, you can watch a video of _Extra Credits_ that explains this concept in an easy to digest manner. If you take the levels I talked about in this section, you will see that the same scheme of pacing, or at least one very similar one is applied to them.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5LScL4CWe5E" frameborder="0" allowfullscreen></iframe>
+
 As with competitive map balance for an RTS, the best way to conceptualize a map is through drawings, diagrams and schemes. Drawings of how the map will be structured, which elements you will use in the map, and how you would dispose them and the routes the player could take. The same goes for schemes and diagrams.
 
 ***[Here](http://www.ultimaratioregum.co.uk/game/tag/rts/) you can find an article that puts various examples of interesting ways that Command & Conquer aproaches their 1p levels.***
