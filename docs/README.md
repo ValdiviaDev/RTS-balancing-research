@@ -24,7 +24,7 @@ If you are new to the genre and want to learn about the RTS genre and what is it
   * [Competitive Games](https://valdiviadev.github.io/RTS-balancing-research/#competitive-games)
   * [1 player campaign](https://valdiviadev.github.io/RTS-balancing-research/#1-player-campaign)
     * [Examples](https://valdiviadev.github.io/RTS-balancing-research/#examples)
-* [Playtesting](https://valdiviadev.github.io/RTS-balancing-research/#playtesting)
+* [Playtesting](https://valdiviadev.github.io/RTS-balancing-research/#final-mentions)
 * [Bibliography](https://valdiviadev.github.io/RTS-balancing-research/#bibliography)
 
 # Unit balancing
@@ -482,17 +482,78 @@ To let everything clear, when conceptualizing a level, using this rarity index t
 
 ### Build rate
 
-This game economy that has to be set up in an RTS game has a very clear function, that's the one of allowing the player to progressively build their army. As I said in the last section, this system needs a coherence in it's balancing, because an RTS game with a bad sense of progrssion, would greatly injure one of the two big parts of these types of games, that is the part of having to strategize a good way of managing your base to allow for a fast army construction.
+This game economy that has to be set up in an RTS game has a very clear function, that's the one of allowing the player to progressively build their army. As I said in the last section, this system needs a coherence in its balancing, because an RTS game with a bad sense of progrssion would greatly injure one of the two big parts of these types of games, that is the part of having to strategize a good way of managing your base to allow for a fast army construction.
 
-When utilizing a game economy system to determine the construction of a base and an army in the game, we have two parameters to take into account: the **cost** of each element, and how many **time to build** in seconds will each element dispose of. In this section I'll be focusing on how to have a nice and balanced build rate for the elements of an RTS game, respecting their cost.
+When utilizing a game economy system to determine the construction of a base and an army in the game, we have two parameters to take into account: the **cost** of each element, and how many **time to build** in seconds would each element dispose of. In this section I'll be focusing on how to have a nice and balanced build rate for the elements of an RTS game, respecting their cost.
 
-Before diving right into the calculations, it should be noted that as a rule of thumb, buildings should take more time and resources to build than unit upgrades, and unit upgrades should take more time and resources than units; because of permanency and significance in the overall game. In other words, buildings are more important than the other two elements for allowing their creation, and unit upgrades are more important that units, for being permanent and having more importance overall through the course of a level.
+Before diving right into the calculations, it should be noted that as a rule of thumb, buildings should take more time and resources to build than unit upgrades, and unit upgrades should take more time and resources than units; because of permanency and significance in the overall game. In other words, buildings are more important than the other two elements for allowing the creation of these two, and unit upgrades are more important that units, for being permanent and having more importance overall through the course of a level.
 
 <img src="Images/TechTreesGameEconomy/BuildRate.jpg" width="200">
 
-**15 = 300 * 1 / X -> X = 20
+To make a balanced build rate, first we'll need to make sure that we have a base cost and build time for a base component of the game. Let's say we found an adequate cost for a unit through the methods I've displayed in one of the first [sections](https://valdiviadev.github.io/RTS-balancing-research/#intransitive-mechanics-applied-to-an-rts-game) of this research project. Having this base cost, we will determine a base time of production for this element. If this element (it can be anything: a building, unit, unit upgrade) has a small cost, it shoud take a short time to be produced, and if it has a big cost, it would need more time of production. We want these base parameters to determine a number that will be important in the formula we'll be using to balance out all the build rate of the game. Let's call this parameter **time adaptor**. To find this parameter we'll need to apply this formula to the set of parameters we already have (TA is the time adaptor, and every other parameter is explained in the [previous section](https://valdiviadev.github.io/RTS-balancing-research/#game-economy)):
 
-**time = (cost 1 * rec rarity 1 + cost 2 * rec rarity 2) / num
+**TA(n) = (a * aRI  + b * bRI + ... + n) * nRI/build time** 
+
+Taking the formula to calculate a general cost of an element of the game, that I explained in the last section, we can dramatically simplify this equation to:
+
+**TA = cost/build time**
+
+Putting an example of this formula, we have a base unit that costs 300 gold (common resource), doesn't need any uncommon resource to be created, and takes 10 second to build:
+
+10 = 300 * 1 / X -> X = **30** 
+
+The unit set of this game would have a time adaptor of 30.
+
+After having this parameter defined, we can now apply the formula that will allow us to have a progressive build rate depending on the cost every element of the game has:
+
+**build time(n) = (a * aRI  + b * bRI + ... + n * nRI) / TA**
+
+Again, taking into account the formula of the last section of this document:
+
+**build time = cost/TA**
+
+As an example, I'll will assume the base unit on which I did calculations before is a peon; and with this I will create more elements for the game and apply the build time formula to them. In this theoretical set of elements, my common resource will be gold, and my uncommon resource, with a **rarity index** of 1.3 will be lumber. I will round up decimal numbers, for the sake of clarity.
+
+<table>
+
+<tr>
+<td></td>
+<td>Gold</td>
+<td>Lumber</td>
+<td>Build time (s)</td>
+</tr>
+
+<tr>
+<td>Peon</td>
+<td>300</td>
+<td>0</td>
+<td>10</td>
+</tr>
+
+<tr>
+<td>House</td>
+<td>700</td>
+<td>500</td>
+<td>45</td>
+</tr>
+
+<tr>
+<td>Peon Upgrade</td>
+<td>400</td>
+<td>100</td>
+<td>18</td>
+</tr>
+
+<tr>
+<td>Flat</td>
+<td>1200</td>
+<td>700</td>
+<td>70</td>
+</tr>
+
+</table>
+
+With this table, it can be observed that every build time has a small progressive scalation depending on the resources it uses, so it can be determinded that this method is useful for a progressive, steady scalation of the game elements of an RTS; more than a one with a slow start but fast paced rhythm at later stages of the game. Depending on the game, if you wanted to make it resource heavy, or really slow paced, you would need to change the base elements to have a bigger or smaller gap bettween the cost and build time. It would be recomended, that more than making one big table for every element of the game, a table for every element type (buildings, unit upgrades, units, etc) would be done, having each element type their own build rate scalation, and not having only one in the entire game; in this way, it would be easier to balance every element of the game. 
 
 # Artificial Intelligence
 
@@ -595,7 +656,7 @@ As with competitive map balance for an RTS, the best way to conceptualize a map 
 
 ***If you want to know a more general approach on how to make a level in any video game, I advise you to read this [article](https://gamedevelopment.tutsplus.com/tutorials/a-beginners-guide-to-designing-video-game-levels--cms-25662).***
 
-# Playtesting
+# Final mentions
 
 # Bibliography
 
