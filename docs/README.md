@@ -713,27 +713,38 @@ https://www.quora.com/How-are-technology-trees-developed-for-strategy-games)
 
 [About tech tree creation](https://books.google.es/books?id=E9JG6JjPU-sC&pg=PA232&lpg=PA232&dq=tech+tree+balancing&source=bl&ots=O0m7obCLEp&sig=RR3Bq0d6NJy-weW4bMYmOc29_jU&hl=es&sa=X&ved=0ahUKEwiExt70vrXZAhVPm-AKHWmwCdcQ6AEIfDAH#v=onepage&q=tech%20tree%20balancing&f=false)
 
-[AA](https://forums.civfanatics.com/threads/how-to-design-a-tech-tree.274045/)
-https://apolyton.net/forum/miscellaneous/archives/apolyton-community-archive/58720-designing-the-ultimate-tech-tree
+[More about how to design a tech tree](https://forums.civfanatics.com/threads/how-to-design-a-tech-tree.274045/)
 
-**Starcraft 2 data spreadsheets**
+[Discusion on designing a tech tree for Civilization](https://apolyton.net/forum/miscellaneous/archives/apolyton-community-archive/58720-designing-the-ultimate-tech-tree)
 
-https://us.battle.net/forums/en/sc2/topic/2721384445
-https://www.reddit.com/r/starcraft/comments/7h8mke/ragnarokss_zerg_perfect_build_orderspreadsheet/
+**Starcraft data spreadsheets**
+
+[Starcraft 2 info spreadsheet](https://us.battle.net/forums/en/sc2/topic/2721384445)
+
+[A build order on the Zerg species](https://www.reddit.com/r/starcraft/comments/7h8mke/ragnarokss_zerg_perfect_build_orderspreadsheet/)
 
 **Level Design information**
 
-https://gamedevelopment.tutsplus.com/tutorials/a-beginners-guide-to-designing-video-game-levels--cms-25662
-http://www.ultimaratioregum.co.uk/game/tag/rts/
-https://gamedev.stackexchange.com/questions/2370/properties-of-good-rts-level-design
-https://waywardstrategist.com/2015/05/26/time-as-a-resource-part-1-single-player-map-design/
-https://waywardstrategist.com/2015/06/07/time-as-a-resource-part-2-multiplayer-map-design/
-https://theussner.wordpress.com/2010/09/13/rts-level-design-the-layout-part-1/
+[Basic information on how to approach the design of a level](https://gamedevelopment.tutsplus.com/tutorials/a-beginners-guide-to-designing-video-game-levels--cms-25662)
+
+[Various examples of interesting ways that Command & Conquer aproaches their 1p levels](http://www.ultimaratioregum.co.uk/game/tag/rts/)
+
+[Discusion on good RTS level  design](https://gamedev.stackexchange.com/questions/2370/properties-of-good-rts-level-design)
+
+[Article that explains the use of time as a mechanic in RTS levels](https://waywardstrategist.com/2015/05/26/time-as-a-resource-part-1-single-player-map-design/)
+
+[About competitive map design](https://waywardstrategist.com/2015/06/07/time-as-a-resource-part-2-multiplayer-map-design/)
+
+[More on map design](https://theussner.wordpress.com/2010/09/13/rts-level-design-the-layout-part-1/)
 
 **Miscelaneous**
 
-https://boardgamegeek.com/blogpost/28447/internal-balance-game-design
-https://www.gamasutra.com/view/feature/134768/understanding_balance_in_video_.php?page=3
-http://www.oxeyegames.com/rts-game-play-part-6-visible-balancing/
-https://dtai.cs.kuleuven.be/events/MLSA13/presentations/bosc.pdf
-https://www.gamasutra.com/blogs/BrandonCasteel/20170306/292982/The_Balance_of_Power_Progression_and_Equilibrium_in_RealTime_StrategyGames.php
+[Article on game balance in general](https://www.gamasutra.com/view/feature/134768/understanding_balance_in_video_.php?page=3)
+
+[General advice on RTS balancing](http://www.oxeyegames.com/rts-game-play-part-6-visible-balancing/)
+
+[Article on internal balance](https://boardgamegeek.com/blogpost/28447/internal-balance-game-design)
+
+[More about pattern mining and e-sports](https://dtai.cs.kuleuven.be/events/MLSA13/presentations/bosc.pdf)
+
+[Article about progression and equilibrium in RTS](https://www.gamasutra.com/blogs/BrandonCasteel/20170306/292982/The_Balance_of_Power_Progression_and_Equilibrium_in_RealTime_StrategyGames.php)
