@@ -24,7 +24,7 @@ If you are new to the genre and want to learn about the RTS genre and what is it
   * [Competitive Games](https://valdiviadev.github.io/RTS-balancing-research/#competitive-games)
   * [1 player campaign](https://valdiviadev.github.io/RTS-balancing-research/#1-player-campaign)
     * [Examples](https://valdiviadev.github.io/RTS-balancing-research/#examples)
-* [Playtesting](https://valdiviadev.github.io/RTS-balancing-research/#final-mentions)
+* [Playtesting](https://valdiviadev.github.io/RTS-balancing-research/#final-things-to-highlight)
 * [Bibliography](https://valdiviadev.github.io/RTS-balancing-research/#bibliography)
 
 # Unit balancing
@@ -656,36 +656,42 @@ As with competitive map balance for an RTS, the best way to conceptualize a map 
 
 ***If you want to know a more general approach on how to make a level in any video game, I advise you to read this [article](https://gamedevelopment.tutsplus.com/tutorials/a-beginners-guide-to-designing-video-game-levels--cms-25662).***
 
-# Final mentions
+# Final Things To Highlight
+
+To finish off this document, I would like to highlight that all the methods that I've explained in this document are mostly orientative. None of them will be 100% effective on balancing an RTS game, but they will serve of great help. When making an RTS game, these methods and indications will serve of help to a certain degree, as they would have to be adapted to the specific game you would be making, or even be completely changed.
+
+To finish off balancing a game it is really important to **playtest** it. No methodology in game design is completely accurate and will not determine how fun a game is for the most part, so it is strictly necessary to playtest the game to verify if the game is as balanced as you initially thought, and to check what's wrong with the game's balance, in the case there's some case of unbalance in the game.
+
+As a final note, every time you find yourself not knowing what to do when designing a specific aspect of a game, it is incredibly useful to use **drawings**, **schemes or diagrams** and **tables**; as I've been doing all through this document. It really helps to structure everything you have in mind, and in most cases, it also helps on solving design problems.
 
 # Bibliography
 
 **About intransitive mechanics (rock-paper-scissors)**
 
-[https://gamebalanceconcepts.wordpress.com/2010/09/01/level-9-intransitive-mechanics/](https://gamebalanceconcepts.wordpress.com/2010/09/01/level-9-intransitive-mechanics/)
-[https://gamedev.stackexchange.com/questions/144995/rts-balancing-for-units-with-different-costs](https://gamedev.stackexchange.com/questions/144995/rts-balancing-for-units-with-different-costs)
-[https://www.gamedev.net/forums/topic/685693-rts-unit-balance/](https://www.gamedev.net/forums/topic/685693-rts-unit-balance/)
-[https://en.wikipedia.org/wiki/Zero-sum_game](https://en.wikipedia.org/wiki/Zero-sum_game)
-[http://zero-k.info/Forum/Thread/22670?page=1](http://zero-k.info/Forum/Thread/22670?page=1)
+[About games and intransitive mechanics](https://gamebalanceconcepts.wordpress.com/2010/09/01/level-9-intransitive-mechanics/)
+[Forum thread that discuses the method of the first link](https://gamedev.stackexchange.com/questions/144995/rts-balancing-for-units-with-different-costs)
+[Forum thread that discuses the method of the first link](https://www.gamedev.net/forums/topic/685693-rts-unit-balance/)
+[What's a zero-sum game?](https://en.wikipedia.org/wiki/Zero-sum_game)
+[Forum thread with another aproach on this subject](http://zero-k.info/Forum/Thread/22670?page=1)
 
 **Extra credits _Perfect Imbalance_ video**
 
-https://www.youtube.com/watch?v=e31OSVZF77w
+[Perfect Imbalance - Why Unbalanced Design Creates Balanced Play - Extra Credits](https://www.youtube.com/watch?v=e31OSVZF77w)
  
 **Abstracts**
 
-https://brage.bibsys.no/xmlui/bitstream/handle/11250/2463289/13662_FULLTEXT.pdf?sequence=1
-http://ceur-ws.org/Vol-1969/paper-03.pdf
-http://www.cs.mun.ca/~dchurchill/pdf/DavidChurchill_phd_thesis.pdf
+[Explains how to use coevolutionary algorithms in RTS games](https://brage.bibsys.no/xmlui/bitstream/handle/11250/2463289/13662_FULLTEXT.pdf?sequence=1)
+[Study on Starcraft II's StarCraft II professional players strategies’ discovery based on sequential pattern mining](http://ceur-ws.org/Vol-1969/paper-03.pdf)
+[About applying heuristic techniques to RTS games](http://www.cs.mun.ca/~dchurchill/pdf/DavidChurchill_phd_thesis.pdf)
   
 **Warcraft II strategy guide**
 
-http://classic.battle.net/war2/strategy.shtml
+[Guide](http://classic.battle.net/war2/strategy.shtml)
  
 **Warcraft II Tech tree**
 
-http://classic.battle.net/war2/basic/hbuildings.shtml (humans)
-http://classic.battle.net/war2/basic/obuildings.shtml (orcs)
+[Humans](http://classic.battle.net/war2/basic/hbuildings.shtml)
+[Orcs](http://classic.battle.net/war2/basic/obuildings.shtml)
 
 **Abstracts About build order**
 
@@ -695,10 +701,10 @@ http://www.dtic.mil/dtic/tr/fulltext/u2/a599118.pdf
  
 **Tech Tree information**
 
-https://books.google.es/books?id=RhVoR-ATDlUC&pg=PT251&lpg=PT251&dq=tech+tree+balancing&source=bl&ots=b55nW0D4G-&sig=oTwLejX0L3NGmAfw2_93jd--E1E&hl=es&sa=X&ved=0ahUKEwjW1I2suLXZAhVmneAKHfR5Cro4ChDoAQhsMAk#v=onepage&q=tech%20tree%20balancing&f=false
-https://www.quora.com/How-are-technology-trees-developed-for-strategy-games
-https://books.google.es/books?id=E9JG6JjPU-sC&pg=PA232&lpg=PA232&dq=tech+tree+balancing&source=bl&ots=O0m7obCLEp&sig=RR3Bq0d6NJy-weW4bMYmOc29_jU&hl=es&sa=X&ved=0ahUKEwiExt70vrXZAhVPm-AKHWmwCdcQ6AEIfDAH#v=onepage&q=tech%20tree%20balancing&f=false
-https://forums.civfanatics.com/threads/how-to-design-a-tech-tree.274045/
+[About tech tree composition](https://books.google.es/books?id=RhVoR-ATDlUC&pg=PT251&lpg=PT251&dq=tech+tree+balancing&source=bl&ots=b55nW0D4G-&sig=oTwLejX0L3NGmAfw2_93jd--E1E&hl=es&sa=X&ved=0ahUKEwjW1I2suLXZAhVmneAKHfR5Cro4ChDoAQhsMAk#v=onepage&q=tech%20tree%20balancing&f=false
+https://www.quora.com/How-are-technology-trees-developed-for-strategy-games)
+[About tech tree creation](https://books.google.es/books?id=E9JG6JjPU-sC&pg=PA232&lpg=PA232&dq=tech+tree+balancing&source=bl&ots=O0m7obCLEp&sig=RR3Bq0d6NJy-weW4bMYmOc29_jU&hl=es&sa=X&ved=0ahUKEwiExt70vrXZAhVPm-AKHWmwCdcQ6AEIfDAH#v=onepage&q=tech%20tree%20balancing&f=false)
+[AA](https://forums.civfanatics.com/threads/how-to-design-a-tech-tree.274045/)
 https://apolyton.net/forum/miscellaneous/archives/apolyton-community-archive/58720-designing-the-ultimate-tech-tree
 
 **Starcraft 2 data spreadsheets**
