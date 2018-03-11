@@ -276,8 +276,8 @@ So in order to calculate the payoff for the table it would be better to use this
 
 ### payoff = B cost(A dps/B hp) - A cost(B dps/A hp)
 
-This table would give the same results in the probability calculations, as they did before, but using the formula from avobe.
-/////////////////////DO THIS
+This table would give the same results in the probability calculations, as they did before, but using the formula from above.
+
 <table>
 
 <tr>
@@ -292,31 +292,33 @@ This table would give the same results in the probability calculations, as they 
 <tr>
 <td>Swordsman</td>
 <td>40</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
+<td>66</td>
+<td>20</td>
+<td>40</td>
 <td>0</td>
 </tr>
 
 <tr>
 <td>Gunman</td>
 <td>60</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
+<td>40</td>
+<td>25</td>
+<td>25</td>
+<td>80</td>
 </tr>
 
 <tr>
 <td>F. Machine</td>
 <td>80</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
+<td>70</td>
+<td>66</td>
+<td>20</td>
+<td>50</td>
 </tr>
 
 </table>
+
+When calculating the payoff results for this set of units, they wont be exactly the same as the table from before, as I rounded up some of the dps numbers. This isn't the only way to calculate this kind of table; as you could say that one unit has only one parameter for its dps, or take in account other more abstract unit parameters, like **range** or **speed**.
 
 ***You can find and edit (if you download it) a table that utilizes this last method explained in this [thread](https://www.gamedev.net/forums/topic/685693-rts-unit-balance/?tab=comments#comment-5329035). The table has been done by the user of this forum named "HappyCoder". This a really good table to use if you need to balance your units.***
 
