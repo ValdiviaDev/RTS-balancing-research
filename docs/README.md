@@ -669,9 +669,13 @@ As a final note, every time you find yourself not knowing what to do when design
 **About intransitive mechanics (rock-paper-scissors)**
 
 [About games and intransitive mechanics](https://gamebalanceconcepts.wordpress.com/2010/09/01/level-9-intransitive-mechanics/)
+
 [Forum thread that discuses the method of the first link](https://gamedev.stackexchange.com/questions/144995/rts-balancing-for-units-with-different-costs)
+
 [Forum thread that discuses the method of the first link](https://www.gamedev.net/forums/topic/685693-rts-unit-balance/)
+
 [What's a zero-sum game?](https://en.wikipedia.org/wiki/Zero-sum_game)
+
 [Forum thread with another aproach on this subject](http://zero-k.info/Forum/Thread/22670?page=1)
 
 **Extra credits _Perfect Imbalance_ video**
@@ -681,7 +685,9 @@ As a final note, every time you find yourself not knowing what to do when design
 **Abstracts**
 
 [Explains how to use coevolutionary algorithms in RTS games](https://brage.bibsys.no/xmlui/bitstream/handle/11250/2463289/13662_FULLTEXT.pdf?sequence=1)
+
 [Study on Starcraft II's StarCraft II professional players strategies’ discovery based on sequential pattern mining](http://ceur-ws.org/Vol-1969/paper-03.pdf)
+
 [About applying heuristic techniques to RTS games](http://www.cs.mun.ca/~dchurchill/pdf/DavidChurchill_phd_thesis.pdf)
   
 **Warcraft II strategy guide**
@@ -691,6 +697,7 @@ As a final note, every time you find yourself not knowing what to do when design
 **Warcraft II Tech tree**
 
 [Humans](http://classic.battle.net/war2/basic/hbuildings.shtml)
+
 [Orcs](http://classic.battle.net/war2/basic/obuildings.shtml)
 
 **Abstracts About build order**
@@ -703,7 +710,9 @@ http://www.dtic.mil/dtic/tr/fulltext/u2/a599118.pdf
 
 [About tech tree composition](https://books.google.es/books?id=RhVoR-ATDlUC&pg=PT251&lpg=PT251&dq=tech+tree+balancing&source=bl&ots=b55nW0D4G-&sig=oTwLejX0L3NGmAfw2_93jd--E1E&hl=es&sa=X&ved=0ahUKEwjW1I2suLXZAhVmneAKHfR5Cro4ChDoAQhsMAk#v=onepage&q=tech%20tree%20balancing&f=false
 https://www.quora.com/How-are-technology-trees-developed-for-strategy-games)
+
 [About tech tree creation](https://books.google.es/books?id=E9JG6JjPU-sC&pg=PA232&lpg=PA232&dq=tech+tree+balancing&source=bl&ots=O0m7obCLEp&sig=RR3Bq0d6NJy-weW4bMYmOc29_jU&hl=es&sa=X&ved=0ahUKEwiExt70vrXZAhVPm-AKHWmwCdcQ6AEIfDAH#v=onepage&q=tech%20tree%20balancing&f=false)
+
 [AA](https://forums.civfanatics.com/threads/how-to-design-a-tech-tree.274045/)
 https://apolyton.net/forum/miscellaneous/archives/apolyton-community-archive/58720-designing-the-ultimate-tech-tree
 
