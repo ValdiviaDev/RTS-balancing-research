@@ -1,4 +1,4 @@
-My name is David Valdivia and I'm a student from the video games design and development degree at the Polytechnic University of Catalonia (UPC), in the sub-delegation of the universitiiy called [CITM](https://www.citm.upc.edu/). In this website I'm going to be explaining the importance of balance in RTS video games (real time strategy games), which are the most important aspects to take in account in this subject, and some methods to reach the goal of balancing an RTS game.
+My name is [David Valdivia](https://github.com/ValdiviaDev) and I'm a student from the video games design and development degree at the Polytechnic University of Catalonia (UPC), in the sub-delegation of the universitiiy called [CITM](https://www.citm.upc.edu/). In this website I'm going to be explaining the importance of balance in RTS video games (real time strategy games), which are the most important aspects to take in account in this subject, and some methods to reach the goal of balancing an RTS game.
 
 Game balance is the concept and action of shaping a game’s rules with the object to make this game’s rules and systems effective. Game balancing is a really important aspect to take in account both in board games and in video games, because an unbalanced game; in other words, a game with poor and/or unfair mechanics and systems; is a boring game to play, at its best; and a frustrating and unfair game to play, at its worst.
 
@@ -685,7 +685,7 @@ To explore which build orders would be better for a theoretical RTS game in the 
 
 * ***[About how to use coevolutionary algorithms in RTS games](https://brage.bibsys.no/xmlui/bitstream/handle/11250/2463289/13662_FULLTEXT.pdf?sequence=1)***
 
-* ***[Solving a multi-objective build order problem utilizing a multi-objective evolutionary algorithm] (https://pdfs.semanticscholar.org/7367/f5772cacdf7ab40d8bb948354ed8e7662e09.pdf)***
+* ***[Solving a multi-objective build order problem utilizing a multi-objective evolutionary algorithm (https://pdfs.semanticscholar.org/7367/f5772cacdf7ab40d8bb948354ed8e7662e09.pdf)***
  
  * ***[Another abstract on Build order optimization for real.time strategy agents suing multi-objective evolutionary algorithm](http://www.dtic.mil/dtic/tr/fulltext/u2/a599118.pdf)***
  
@@ -730,7 +730,7 @@ As a final note, every time you find yourself not knowing what to do when design
 
 [About applying heuristic techniques to RTS games](http://www.cs.mun.ca/~dchurchill/pdf/DavidChurchill_phd_thesis.pdf)
 
-[Solving a multi-objective build order problem utilizing a multi objective evolutionary algorithm] (https://pdfs.semanticscholar.org/7367/f5772cacdf7ab40d8bb948354ed8e7662e09.pdf)
+[Solving a multi-objective build order problem utilizing a multi objective evolutionary algorithm](https://pdfs.semanticscholar.org/7367/f5772cacdf7ab40d8bb948354ed8e7662e09.pdf)
 
 [Another abstract on Build order optimization for real.time strategy agents suing multi-objective evolutionary algorithm](http://www.dtic.mil/dtic/tr/fulltext/u2/a599118.pdf)
 
