@@ -685,7 +685,7 @@ To explore which build orders would be better for a theoretical RTS game in the 
 
 * ***[About how to use coevolutionary algorithms in RTS games](https://brage.bibsys.no/xmlui/bitstream/handle/11250/2463289/13662_FULLTEXT.pdf?sequence=1)***
 
-* ***[Solving a multi-objective build order problem utilizing a multi-objective evolutionary algorithm (https://pdfs.semanticscholar.org/7367/f5772cacdf7ab40d8bb948354ed8e7662e09.pdf)***
+* ***[Solving a multi-objective build order problem utilizing a multi-objective evolutionary algorithm](https://pdfs.semanticscholar.org/7367/f5772cacdf7ab40d8bb948354ed8e7662e09.pdf)***
  
  * ***[Another abstract on Build order optimization for real.time strategy agents suing multi-objective evolutionary algorithm](http://www.dtic.mil/dtic/tr/fulltext/u2/a599118.pdf)***
  
