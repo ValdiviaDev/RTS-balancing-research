@@ -675,8 +675,25 @@ More on state machines and their ins and outs [here](https://www.gamedev.net/art
 
 Now, when considering how to make an enemy AI in RTS game in a more global scale in relation to the game's difficulty, you could take two types of approaches:
 
-1. Give them more resourcces
-2. Explore build order possibilities
+1. Decrease, but mostly increase the difficulty of the game, by giving the enemy AI a **different amount of resources than the player**. You could potentially increase the game's difficulty by giving the enemy more resources to work with than the player. In this case the game would consist in a battle against time, before the player would deplete their resouces. This technique isn't really good, as by increasing the mathematical chances for the CPU to win, doesn't necessarily mean that the AI is more capable of winning, due that its strategy could be very poor compared to the player's.
+
+2. Make an enemy AI more intelligent through the implementation of an algorithm that makes it work in one type of **[build order](https://en.wikipedia.org/wiki/Build_order)** or another one. Through the exploration on which build orders are better than others, you could make the AI more or less intelligent without resorting to cheap tricks.
+
+To explore which build orders would be better for a theoretical RTS game in the making, you could make a diagram that explores every possibility on building orders of the game, and calculate which would be more optimal through calculations on which takes less time and/or resources; or implement an algorithm that makes that for you, as there could be a an incredibly large spectrum of build orders in the game. 
+
+***You can know more about build orders and more AI algorithm exploration through some of these abstracts:***
+
+* ***[About how to use coevolutionary algorithms in RTS games](https://brage.bibsys.no/xmlui/bitstream/handle/11250/2463289/13662_FULLTEXT.pdf?sequence=1)***
+
+* ***[Solving a multi-objective build order problem utilizing a multi-objective evolutionary algorithm] (https://pdfs.semanticscholar.org/7367/f5772cacdf7ab40d8bb948354ed8e7662e09.pdf)***
+ 
+ * ***[Another abstract on Build order optimization for real.time strategy agents suing multi-objective evolutionary algorithm](http://www.dtic.mil/dtic/tr/fulltext/u2/a599118.pdf)***
+ 
+* ***[Build rder optimization in starCraft](https://skatgame.net/mburo/ps/aiide11-bo.pdf)***
+
+* ***[Study on Starcraft II's StarCraft II professional players strategies’ discovery based on sequential pattern mining](http://ceur-ws.org/Vol-1969/paper-03.pdf)***
+
+* ***[About applying heuristic techniques to RTS games](http://www.cs.mun.ca/~dchurchill/pdf/DavidChurchill_phd_thesis.pdf)***
 
 
 # Final Things To Highlight
@@ -707,11 +724,17 @@ As a final note, every time you find yourself not knowing what to do when design
  
 **Abstracts**
 
-[Explains how to use coevolutionary algorithms in RTS games](https://brage.bibsys.no/xmlui/bitstream/handle/11250/2463289/13662_FULLTEXT.pdf?sequence=1)
+[About how to use coevolutionary algorithms in RTS games](https://brage.bibsys.no/xmlui/bitstream/handle/11250/2463289/13662_FULLTEXT.pdf?sequence=1)
 
 [Study on Starcraft II's StarCraft II professional players strategies’ discovery based on sequential pattern mining](http://ceur-ws.org/Vol-1969/paper-03.pdf)
 
 [About applying heuristic techniques to RTS games](http://www.cs.mun.ca/~dchurchill/pdf/DavidChurchill_phd_thesis.pdf)
+
+[Solving a multi-objective build order problem utilizing a multi objective evolutionary algorithm] (https://pdfs.semanticscholar.org/7367/f5772cacdf7ab40d8bb948354ed8e7662e09.pdf)
+
+[Another abstract on Build order optimization for real.time strategy agents suing multi-objective evolutionary algorithm](http://www.dtic.mil/dtic/tr/fulltext/u2/a599118.pdf)
+
+[Build Order Optimization in StarCraft](https://skatgame.net/mburo/ps/aiide11-bo.pdf)
   
 **Warcraft II strategy guide**
 
@@ -722,12 +745,6 @@ As a final note, every time you find yourself not knowing what to do when design
 [Humans](http://classic.battle.net/war2/basic/hbuildings.shtml)
 
 [Orcs](http://classic.battle.net/war2/basic/obuildings.shtml)
-
-**Abstracts About build order**
-
-https://pdfs.semanticscholar.org/7367/f5772cacdf7ab40d8bb948354ed8e7662e09.pdf
-https://skatgame.net/mburo/ps/aiide11-bo.pdf
-http://www.dtic.mil/dtic/tr/fulltext/u2/a599118.pdf
  
 **Tech Tree information**
 
