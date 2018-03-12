@@ -662,9 +662,19 @@ Artificial intelligence is an essential aspect to balance in a 1 player RTS game
 
 In essence, when approaching how to make your AI for the game, first it will need to be determined **how hard do you want to make the AI** to deal with. You may want to make an easier AI for earlier stages of a 1p game to help players addapt to the game, and you may want to make a tougher AI to deal with in later stages of the game. For a competitive game you may want to make different levels of difficulty for the player to select in some kind of practice mode.
 
-Before going into how a AI should act in an RTS game in a more global scale, we should first stablish how each type of unit should act in a more individual level. To make this it would be necessary to make a machine state diagram in relation on how they act in relation to the player, in relation to their environment and in relation to each other. /// Do they escape the player?
+Before going into how a AI should act in an RTS game in a more global scale, we should first stablish how each type of unit should act in a more individual level. To make this it would be necessary to make a machine state diagram, in relation on how the game's units act **in relation to the player**, **in relation to their environment** and **in relation to each other**. 
 
-There are two ways to handle AI when: 
+<img src="Images/StateMachine.png" width="500">
+State machine example
+
+For example; how does a worker unit do when it is attacked by the player? Does it run away from it? Does it follow its normal path and continuies working like nothing? These are very important details to take into account, that in the process of constructing a state machine.
+
+These are also useful when determining the dificulty aspect of the game I mentioned earlier. In these diagrams you can clearly ideate how an enemy AI can plan a strategy towards the player. If you wanted to make them easier to deal with, you could make that they don't stop attacking the player even if they have low health; and you could make them harder by making them retire to their base if they see they can possibly win against another group of units, for example. Not also enemy units, but it is important to make player's units somewhat intelligent in the intent of making an RTS game more usable. For example, making that a player's unit automaticaly attacks another one when being attacked.
+
+More on state machines and their ins and outs [here](https://www.gamedev.net/articles/programming/general-and-gameplay-programming/state-machines-in-games-r2982/).
+
+Now, when considering how to make an enemy AI in RTS game in a more global scale in relation to the game's difficulty, you could take two types of approaches:
+
 1. Give them more resourcces
 2. Explore build order possibilities
 
@@ -761,3 +771,5 @@ https://www.quora.com/How-are-technology-trees-developed-for-strategy-games)
 [More about pattern mining and e-sports](https://dtai.cs.kuleuven.be/events/MLSA13/presentations/bosc.pdf)
 
 [Article about progression and equilibrium in RTS](https://www.gamasutra.com/blogs/BrandonCasteel/20170306/292982/The_Balance_of_Power_Progression_and_Equilibrium_in_RealTime_StrategyGames.php)
+
+[About state machines](https://www.gamedev.net/articles/programming/general-and-gameplay-programming/state-machines-in-games-r2982/)
