@@ -689,7 +689,7 @@ To explore which build orders would be better for a theoretical RTS game in the 
  
  * ***[Another abstract on Build order optimization for real.time strategy agents suing multi-objective evolutionary algorithm](http://www.dtic.mil/dtic/tr/fulltext/u2/a599118.pdf)***
  
-* ***[Build rder optimization in starCraft](https://skatgame.net/mburo/ps/aiide11-bo.pdf)***
+* ***[Build order optimization in StarCraft](https://skatgame.net/mburo/ps/aiide11-bo.pdf)***
 
 * ***[Study on Starcraft II's StarCraft II professional players strategies’ discovery based on sequential pattern mining](http://ceur-ws.org/Vol-1969/paper-03.pdf)***
 
@@ -734,7 +734,7 @@ As a final note, every time you find yourself not knowing what to do when design
 
 [Another abstract on Build order optimization for real.time strategy agents suing multi-objective evolutionary algorithm](http://www.dtic.mil/dtic/tr/fulltext/u2/a599118.pdf)
 
-[Build Order Optimization in StarCraft](https://skatgame.net/mburo/ps/aiide11-bo.pdf)
+[Build order optimization in StarCraft](https://skatgame.net/mburo/ps/aiide11-bo.pdf)
   
 **Warcraft II strategy guide**
 
