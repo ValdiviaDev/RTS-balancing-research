@@ -658,11 +658,13 @@ As with competitive map balance for an RTS, the best way to conceptualize a map 
 
 # Artificial Intelligence
 
-Artificial intelligence is an important aspect to balance in a 1 player RTS game, because with an unbalanced AI, every other aspect of to balance in the game would be useless, as the strategy would not //////
+Artificial intelligence is an essential aspect to balance in a 1 player RTS game, because with an unbalanced AI, every other aspect to balance in the game would be useless, as these aspects wouldn't have weight in the equation if the AI was not competent enough to counter the player. Artificial intelligence is most essential to balance in RTS video games that focus on a one player experience, but it is also very useful in competitive games, when you want to help new players addapt to the game, or advanced players to better their abilities. 
 
-How to balance an AI in this types of games and  mostly every other game, is determined on how hard do you want to make the game.
+In essence, when approaching how to make your AI for the game, first it will need to be determined **how hard do you want to make the AI** to deal with. You may want to make an easier AI for earlier stages of a 1p game to help players addapt to the game, and you may want to make a tougher AI to deal with in later stages of the game. For a competitive game you may want to make different levels of difficulty for the player to select in some kind of practice mode.
 
-Ways of making hard AI: 
+Before going into how a AI should act in an RTS game in a more global scale, we should first stablish how each type of unit should act in a more individual level. To make this it would be necessary to make a machine state diagram in relation on how they act in relation to the player, in relation to their environment and in relation to each other. /// Do they escape the player?
+
+There are two ways to handle AI when: 
 1. Give them more resourcces
 2. Explore build order possibilities
 
