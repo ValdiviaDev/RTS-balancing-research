@@ -19,12 +19,12 @@ If you are new to the genre and want to learn about the RTS genre and what is it
        * [Tech tree balance](https://valdiviadev.github.io/RTS-balancing-research/#tech-tree-balance)
     * [Game economy](https://valdiviadev.github.io/RTS-balancing-research/#game-economy)
        * [Build rate](https://valdiviadev.github.io/RTS-balancing-research/#build-rate)
-* [Artificial Intelligence](https://valdiviadev.github.io/RTS-balancing-research/#artificial-intelligence)
 * [Map structuring](https://valdiviadev.github.io/RTS-balancing-research/#map-structuring)
   * [Competitive Games](https://valdiviadev.github.io/RTS-balancing-research/#competitive-games)
   * [1 player campaign](https://valdiviadev.github.io/RTS-balancing-research/#1-player-campaign)
     * [Examples](https://valdiviadev.github.io/RTS-balancing-research/#examples)
-* [Playtesting](https://valdiviadev.github.io/RTS-balancing-research/#final-things-to-highlight)
+* [Artificial Intelligence](https://valdiviadev.github.io/RTS-balancing-research/#artificial-intelligence)
+* [Final Things To Highlight](https://valdiviadev.github.io/RTS-balancing-research/#final-things-to-highlight)
 * [Bibliography](https://valdiviadev.github.io/RTS-balancing-research/#bibliography)
 
 # Unit balancing
@@ -557,8 +557,6 @@ As an example, I'll will assume the base unit on which I did calculations before
 
 With this table, it can be observed that every build time has a small progressive scalation depending on the resources it uses, so it can be determinded that this method is useful for a progressive, steady scalation of the game elements of an RTS; more than a one with a slow start but fast paced rhythm at later stages of the game. Depending on the game, if you wanted to make it resource heavy, or really slow paced, you would need to change the base elements to have a bigger or smaller gap bettween the cost and build time. It would be recomended, that more than making one big table for every element of the game, a table for every element type (buildings, unit upgrades, units, etc) would be done, having each element type their own build rate scalation, and not having only one in the entire game; in this way, it would be easier to balance every element of the game. 
 
-# Artificial Intelligence
-
 # Map structuring
 
 When balancing maps and how they should be structured in RTS games, the first thing to take in account is that when balancing maps from a competitive RTS videogame, it is very different to balance a map from a 1 player campaign mode, or a game that is strictly a 1 player RTS video game. Another thing to take in account is that, unlike previous sections, we are not working with numbers, but with the construction of a graphical terrain, so there wont be really precise methods or formulas for balancing a map. With all that said, let's start with the balance in competitive maps.
@@ -657,6 +655,17 @@ As with competitive map balance for an RTS, the best way to conceptualize a map 
 
 
 ***If you want to know a more general approach on how to make a level in any video game, I advise you to read this [article](https://gamedevelopment.tutsplus.com/tutorials/a-beginners-guide-to-designing-video-game-levels--cms-25662).***
+
+# Artificial Intelligence
+
+Artificial intelligence is an important aspect to balance in a 1 player RTS game, because with an unbalanced AI, every other aspect of to balance in the game would be useless, as the strategy would not //////
+
+How to balance an AI in this types of games and  mostly every other game, is determined on how hard do you want to make the game.
+
+Ways of making hard AI: 
+1. Give them more resourcces
+2. Explore build order possibilities
+
 
 # Final Things To Highlight
 
