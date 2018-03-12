@@ -304,7 +304,7 @@ This table would give the same results in the probability calculations, as they 
 <td>40</td>
 <td>25</td>
 <td>25</td>
-<td>80</td>
+<td>70</td>
 </tr>
 
 <tr>
