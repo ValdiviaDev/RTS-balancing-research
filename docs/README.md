@@ -665,6 +665,7 @@ In essence, when approaching how to make your AI for the game, first it will nee
 Before going into how a AI should act in an RTS game in a more global scale, we should first stablish how each type of unit should act in a more individual level. To make this it would be necessary to make a machine state diagram, in relation on how the game's units act **in relation to the player**, **in relation to their environment** and **in relation to each other**. 
 
 <img src="Images/StateMachine.png" width="500">
+
 State machine example
 
 For example; how does a worker unit do when it is attacked by the player? Does it run away from it? Does it follow its normal path and continuies working like nothing? These are very important details to take into account, that in the process of constructing a state machine.
